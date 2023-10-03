@@ -1,9 +1,11 @@
 import React from "react";
 
+import '../app/globals.css'
+
 export default function Hello() {
   return (
     <div className="about" id="">
-      <div>HELLO</div>
+      <div className="">HELLO</div>
     </div>
   );
 }

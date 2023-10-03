@@ -1,7 +1,7 @@
 import { Kumbh_Sans } from "next/font/google";
 
-import "./globals.css";
 import type { Metadata } from "next";
+import "./globals.css";
 
 import { Navbar } from "./components/Navbar";
 
@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={kumbhSans.className}>
+    <html lang="en" className={kumbhSans.className}>
+      <body>
         <Navbar />
         {children}
       </body>
