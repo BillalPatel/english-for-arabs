@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 const kumbhSans = Kumbh_Sans({ subsets: ["latin"], weight: ["400"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

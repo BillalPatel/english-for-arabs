@@ -4,11 +4,13 @@ import { Hero } from "./components/Hero";
 import { InfoCard } from "./components/InfoCard";
 // import { VideoBox } from "./components/VideoBox";
 import { Button } from "./components/Button";
+import { CourseCard } from "./components/CourseCard";
 
 import firstImage from "../assets/globe-svgrepo-com.svg";
 import secondImage from "../assets/video-courses-svgrepo-com.svg";
 import thirdImage from "../assets/kaaba-svgrepo-com.svg";
 import teacherImage from "../assets/teacher-medium-skin-tone-svgrepo-com.svg";
+import courseImage from "../assets/video-icon.svg";
 
 export default function Home() {
   return (
@@ -42,7 +44,30 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="explore-courses">Explore courses</section>
+      <section className="explore-courses | text-center space-y-12">
+        <h1 className="text-3xl font-extrabold">Explore courses</h1>
+        <h2 className="text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          nesciunt natus, commodi sed quod odio cum odit voluptate.
+        </h2>
+        <div className="course-cards | flex justify-evenly w-full space-x-16">
+          <CourseCard
+            courseTitle="Course One"
+            courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            courseImageUrl={courseImage}
+          />
+          <CourseCard
+            courseTitle="Course Two"
+            courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            courseImageUrl={courseImage}
+          />
+          <CourseCard
+            courseTitle="Course Three"
+            courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            courseImageUrl={courseImage}
+          />
+        </div>
+      </section>
       <section className="teacher-info | text-center space-y-8">
         <h1 className="text-3xl font-extrabold">Meet your teacher</h1>
         <h2>
