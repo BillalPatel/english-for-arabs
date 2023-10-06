@@ -13,7 +13,7 @@ export function Navbar() {
           className="logo | h-20 w-auto"
         />
       </div>
-      <ul className="menubar-links | flex flex-row space-x-7 font-semibold">
+      <ul className="menubar-links | flex flex-row space-x-7 font-semibold text-black">
         <li className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gold after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
           <Link href="/...">English speakers</Link>
         </li>

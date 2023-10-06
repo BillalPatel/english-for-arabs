@@ -10,10 +10,11 @@ const config: Config = {
     colors: {
       gold: "#FEB601",
       lightGold: "#F8C91F",
-      darkGrey: '#A9A9A9',
+      darkGrey: "#A9A9A9",
       lightGrey: "#F4F4F4",
       black: "#11324D",
       white: "#FCFAF1",
+      offWhite: "#F8F8FF",
     },
     //   // fontSize: {
     //     // sm: "0.9375rem",

@@ -19,7 +19,7 @@ export function CourseCard(props: CourseCardProps) {
       <Image
         className="w-auto h-48 mx-auto duration-300 ease-in-out rounded-2xl hover:scale-110"
         src={courseImageUrl}
-        alt=""
+        alt="Video thumbnail"
       />
     </div>
   );
