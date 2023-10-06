@@ -6,65 +6,99 @@ import { InfoCard } from "./components/InfoCard";
 import { Button } from "./components/Button";
 import { CourseCard } from "./components/CourseCard";
 
-import firstImage from "../assets/globe-svgrepo-com.svg";
-import secondImage from "../assets/video-courses-svgrepo-com.svg";
-import thirdImage from "../assets/kaaba-svgrepo-com.svg";
+import videoIcon from "../assets/hd.svg";
+import translationIcon from "../assets/translation-icon.svg";
+import qualifiedTeacherIcon from "../assets/certificate-icon.svg";
 import teacherImage from "../assets/teacher-medium-skin-tone-svgrepo-com.svg";
-import courseImage from "../assets/video-icon.svg";
+
+import arabicCourseImageOne from "../assets/videos/arabic/arabic-course-one.jpg";
+// import courseImage from "../assets/video-icon.svg";
 
 export default function Home() {
   return (
-    <main className="mx-16 space-y-20">
+    <main className="space-y-32 ">
       <div className="text-2xl font-extrabold"></div>
       <Hero />
       {/* <VideoBox videoLink="https://www.youtube.com/embed/AjOBWmjr09Q" /> */}
       <section>
         <div className="why-study | text-center space-y-12">
-          <h1 className="text-5xl font-extrabold ">Why study with us?</h1>
+          <h1 className="text-5xl font-extrabold ">Why Study With Us?</h1>
           <h2 className="text-2xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos,
-            neque soluta!
+            Improve your Islamic knowledge through our immersive learning
+            experience.
           </h2>
           <div className="info-card-section | flex justify-evenly w-full space-x-16">
             <InfoCard
-              title="This is the best school"
-              description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
-              imageUrl={firstImage}
+              title="High Quality Videos"
+              description="All video content is available in HD quality."
+              imageUrl={videoIcon}
             />
             <InfoCard
-              title="This is the best school"
-              description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
-              imageUrl={secondImage}
+              title="English and Arabic Content"
+              description={
+                "Library of material in both \n English and \n Arabic."
+              }
+              imageUrl={translationIcon}
             />
             <InfoCard
-              title="This is the best school"
-              description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
-              imageUrl={thirdImage}
+              title="Highly Qualified Teachers"
+              description="Teachers from Al-Azhar University in Cairo."
+              imageUrl={qualifiedTeacherIcon}
             />
           </div>
         </div>
       </section>
-      <section className="explore-courses | text-center space-y-12">
-        <h1 className="text-3xl font-extrabold">Explore courses</h1>
+      <section className="explore-english-courses | text-center space-y-12">
+        <h1 className="text-5xl font-extrabold">English courses</h1>
         <h2 className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          nesciunt natus, commodi sed quod odio cum odit voluptate.
+          An increasing number of English courses for students of all levels.
         </h2>
         <div className="course-cards | flex justify-evenly w-full space-x-16">
           <CourseCard
             courseTitle="Course One"
             courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            courseImageUrl={courseImage}
+            courseImageUrl={arabicCourseImageOne}
           />
           <CourseCard
             courseTitle="Course Two"
             courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            courseImageUrl={courseImage}
+            courseImageUrl={arabicCourseImageOne}
           />
           <CourseCard
             courseTitle="Course Three"
             courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-            courseImageUrl={courseImage}
+            courseImageUrl={arabicCourseImageOne}
+          />
+          <CourseCard
+            courseTitle="Course Four"
+            courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            courseImageUrl={arabicCourseImageOne}
+          />
+        </div>
+      </section>
+      <section className="explore-arabic-courses | text-center space-y-12">
+        <h1 className="text-3xl font-extrabold">Arabic courses</h1>
+        <h2 className="text-4xl">عدد متزايد من دورات اللغة العربية الفصحى</h2>
+        <div className="course-cards | flex justify-evenly w-full space-x-16">
+          <CourseCard
+            courseTitle="Course One"
+            courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            courseImageUrl={arabicCourseImageOne}
+          />
+          <CourseCard
+            courseTitle="Course Two"
+            courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            courseImageUrl={arabicCourseImageOne}
+          />
+          <CourseCard
+            courseTitle="Course Three"
+            courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            courseImageUrl={arabicCourseImageOne}
+          />
+          <CourseCard
+            courseTitle="Course Four"
+            courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            courseImageUrl={arabicCourseImageOne}
           />
         </div>
       </section>

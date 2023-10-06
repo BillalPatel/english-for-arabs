@@ -1,4 +1,4 @@
-import { Kumbh_Sans } from "next/font/google";
+import { Lora, Noto_Sans_Arabic } from "next/font/google";
 
 import type { Metadata } from "next";
 import "./globals.css";
@@ -6,7 +6,11 @@ import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
-const kumbhSans = Kumbh_Sans({ subsets: ["latin"], weight: ["400"] });
+const lora = Lora({ subsets: ["cyrillic"], weight: ["400", "500", "600"] });
+const notoSansArabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "English for Arabs",
@@ -19,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={kumbhSans.className}>
-      <body>
+    <html lang="en" className={`${lora.className}`}>
+      <body className={'mx-20'}>
         <Navbar />
         {children}
         <Footer />
