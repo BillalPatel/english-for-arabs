@@ -79,16 +79,16 @@ export function Footer() {
               Products
             </h6>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Angular</a>
+              <a className="text-neutral-600 dark:text-neutral-200">Link</a>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">React</a>
+              <a className="text-neutral-600 dark:text-neutral-200">Link</a>
             </p>
             <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Vue</a>
+              <a className="text-neutral-600 dark:text-neutral-200">Link</a>
             </p>
             <p>
-              <a className="text-neutral-600 dark:text-neutral-200">Laravel</a>
+              <a className="text-neutral-600 dark:text-neutral-200">Link</a>
             </p>
           </div>
           {/* <!-- Useful links section --> */}
