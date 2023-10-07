@@ -33,30 +33,39 @@ export function Hero() {
           <div className="my-14">
             <Button buttonText="Find out more" />
           </div>
-          <Image
-            src={lanternImage}
-            alt={""}
-            className="lantern | relative -top-16 left-56 w-1/4 h-48"
-          />
-        </div>
-        <div className="carousel-two | w-2/4 mx-auto">
-          <div className="space-y-6 text-right">
-            <h1 className="header | text-8xl text-black text-right">
-              مدرسة آل عمران القرآنية
-            </h1>
-            <p className="desc | text-3xl text-black">
-              يتم نشر مقاطع فيديو جديدة بانتظام بواسطة مدرسين يتحدثون الإنجليزية
-              من مصر.
-            </p>
-          </div>
-          <div className="text-right my-14">
-            <Button buttonText="اكتشف المزيد" />
-          </div>
           {/* <Image
             src={lanternImage}
             alt={""}
             className="lantern | relative -top-16 left-56 w-1/4 h-48"
           /> */}
+        </div>
+        <div className="carousel-two | w-3/5 mx-auto flex flex-row">
+          <div>
+            <div className="w-3/4 space-y-6 text-right">
+              <div className="flex flex-row">
+                <Image
+                  src={lanternImage}
+                  alt={""}
+                  className="lantern | relative h-48 w-auto top-0 "
+                />
+                <Image
+                  src={lanternImage}
+                  alt={""}
+                  className="lantern | relative h-48 w-auto top-44"
+                />
+              </div>
+              <h1 className="header | text-8xl text-black text-right">
+                مدرسة آل عمران القرآنية
+              </h1>
+              <p className="desc | text-3xl text-black">
+                يتم نشر مقاطع فيديو جديدة بانتظام بواسطة مدرسين يتحدثون
+                الإنجليزية من مصر.
+              </p>
+            </div>
+            <div className="w-3/4 text-right my-14">
+              <Button buttonText="اكتشف المزيد" />
+            </div>
+          </div>
         </div>
       </Carousel>
     </div>
