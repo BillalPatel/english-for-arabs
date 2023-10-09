@@ -10,18 +10,19 @@ import displayEng from "../../assets/hero-right-to-left.svg";
 import { Button } from "./Button";
 export function Hero() {
   return (
-    <div className="hero | flex flex-col md:flex-row lg:flex-row justify-between px-4 py-2 md:p-12 lg:p-12 space-y-10 mx-auto md:mt-10 lg:mt-10 mb-24">
+    <div className="hero | flex flex-col lg:p-12 md:flex-row lg:flex-row justify-between py-2 md:p-12 space-y-10 mx-auto md:mt-10 lg:mt-10 mb-24">
       <Carousel
         autoplay
         autoplayInterval={2500}
         wrapAround={true}
         animation={"fade"}
-        renderCenterLeftControls={null}
-        renderCenterRightControls={null}
-        renderBottomCenterControls={null}
+        // renderCenterLeftControls={null}
+        // renderCenterRightControls={null}
+        // renderBottomCenterControls={null}
+        withoutControls
       >
         <div className="carousel-one | w-11/12 md:w-9/12 lg:w-9/12 mx-auto flex flex-row">
-          <div className="mx-auto space-y-3 md:w-6/12 lg:w-6/12 md:space-y-10 lg:space-y-10">
+          <div className="space-y-3 md:w-6/12 lg:w-6/12 md:space-y-10 lg:space-y-10">
             <h1 className="header | text-3xl md:text-6xl lg:text-6xl text-black">
               Aal-Imran Quran School
             </h1>

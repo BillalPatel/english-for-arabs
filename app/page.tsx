@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Carousel from "nuka-carousel";
 
 import { Hero } from "./components/Hero";
 import { InfoCard } from "./components/InfoCard";
@@ -50,27 +53,80 @@ export default function Home() {
               levels.
             </h2>
           </div>
-          <div className="course-cards | flex md:justify-evenly lg:justify-evenly w-full md:space-x-16 lg:space-x-16 flex-col md:flex-row lg:flex-row">
-            <CourseCard
-              courseTitle="Course One"
-              courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              courseImageUrl={arabicCourseImageOne}
-            />
-            <CourseCard
-              courseTitle="Course Two"
-              courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              courseImageUrl={arabicCourseImageOne}
-            />
-            <CourseCard
-              courseTitle="Course Three"
-              courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              courseImageUrl={arabicCourseImageOne}
-            />
-            <CourseCard
-              courseTitle="Course Four"
-              courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              courseImageUrl={arabicCourseImageOne}
-            />
+          {/* <div className="course-cards | flex md:justify-evenly lg:justify-evenly w-full md:space-x-16 lg:space-x-16 flex-col md:flex-row lg:flex-row"> */}
+          <div className="course-cards | flex flex-col">
+            <Carousel
+              cellAlign="left"
+              slidesToShow={4}
+              animation={"fade"}
+              // renderCenterLeftControls={null}
+              // renderCenterRightControls={null}
+              // vertical={false}
+              // withoutControls
+              // slidesToScroll={3}
+              swiping
+            >
+              <CourseCard
+                courseTitle="Course One"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Two"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Three"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Four"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Five"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Six"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Four"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Five"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Six"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Four"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Five"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Six"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+            </Carousel>
           </div>
         </section>
         <section className="explore-arabic-courses | text-center space-y-12">
