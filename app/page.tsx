@@ -59,7 +59,7 @@ export default function Home() {
               cellAlign="center"
               // slidesToScroll={"auto"}
               slidesToShow={1.25}
-              // animation={"fade"}
+              animation={"zoom"}
               renderCenterLeftControls={null}
               renderCenterRightControls={null}
               renderBottomCenterControls={({
@@ -82,7 +82,6 @@ export default function Home() {
                   </ul>
                 </div>
               )}
-              // withoutControls
               swiping
             >
               <CourseCard
