@@ -58,7 +58,7 @@ export default function Home() {
             <Carousel
               cellAlign="center"
               // slidesToScroll={"auto"}
-              slidesToShow={1}
+              slidesToShow={1.25}
               // animation={"fade"}
               renderCenterLeftControls={null}
               renderCenterRightControls={null}
@@ -102,26 +102,6 @@ export default function Home() {
               />
               <CourseCard
                 courseTitle="Course Five"
-                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                courseImageUrl={arabicCourseImageOne}
-              />
-              <CourseCard
-                courseTitle="Course Six"
-                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                courseImageUrl={arabicCourseImageOne}
-              />
-              <CourseCard
-                courseTitle="Course Four"
-                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                courseImageUrl={arabicCourseImageOne}
-              />
-              <CourseCard
-                courseTitle="Course Five"
-                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                courseImageUrl={arabicCourseImageOne}
-              />
-              <CourseCard
-                courseTitle="Course Six"
                 courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
                 courseImageUrl={arabicCourseImageOne}
               />
