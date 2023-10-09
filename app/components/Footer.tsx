@@ -78,36 +78,44 @@ export function Footer() {
             <h6 className="flex justify-center mb-4 font-semibold uppercase md:justify-start">
               Products
             </h6>
-            <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Link</a>
-            </p>
-            <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Link</a>
-            </p>
-            <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Link</a>
-            </p>
-            <p>
-              <a className="text-neutral-600 dark:text-neutral-200">Link</a>
-            </p>
+            <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1">
+              <p className="mb-4">
+                <a className="text-neutral-600 dark:text-neutral-200">Link</a>
+              </p>
+              <p className="mb-4">
+                <a className="text-neutral-600 dark:text-neutral-200">Link</a>
+              </p>
+              <p className="mb-4">
+                <a className="text-neutral-600 dark:text-neutral-200">Link</a>
+              </p>
+              <p>
+                <a className="text-neutral-600 dark:text-neutral-200">Link</a>
+              </p>
+            </div>
           </div>
           {/* <!-- Useful links section --> */}
           <div className="">
             <h6 className="flex justify-center mb-4 font-semibold uppercase md:justify-start">
               Useful links
             </h6>
-            <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Pricing</a>
-            </p>
-            <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Settings</a>
-            </p>
-            <p className="mb-4">
-              <a className="text-neutral-600 dark:text-neutral-200">Orders</a>
-            </p>
-            <p>
-              <a className="text-neutral-600 dark:text-neutral-200">Help</a>
-            </p>
+            <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-1">
+              <p className="mb-4">
+                <a className="text-neutral-600 dark:text-neutral-200">
+                  Pricing
+                </a>
+              </p>
+              <p className="mb-4">
+                <a className="text-neutral-600 dark:text-neutral-200">
+                  Settings
+                </a>
+              </p>
+              <p className="mb-4">
+                <a className="text-neutral-600 dark:text-neutral-200">Orders</a>
+              </p>
+              <p>
+                <a className="text-neutral-600 dark:text-neutral-200">Help</a>
+              </p>
+            </div>
           </div>
           {/* <!-- Contact section --> */}
           <div>

@@ -10,10 +10,11 @@ export default function Video() {
   return (
     <div className="temp-video-page | mt-6" id="">
       <h1 className="text-3xl font-bold">English Course</h1>
-      {/* <h1 className="text-2xl ">This is the video page</h1> */}
       <section className="video-section | my-10">
-        <div className="video-box | flex flex-row mx-auto justify-center self-center w-full">
-          <VideoBox videoLink={"https://www.youtube.com/embed/eWwN726sO90?rel=0"} />
+        <div className="video-box | flex flex-row justify-center self-center w-full">
+          <VideoBox
+            videoLink={"https://www.youtube.com/embed/eWwN726sO90?rel=0"}
+          />
         </div>
         <div className="my-10 space-y-2">
           <h2 className="text-2xl font-semibold ">
@@ -27,7 +28,7 @@ export default function Video() {
       </section>
       <section className="translation-section | space-y-2">
         <h2 className="text-2xl font-semibold ">Translation</h2>
-        <p className="text-lg ">
+        <p className="text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias
           perferendis sit, impedit quasi itaque, ipsam perspiciatis optio sunt,
           temporibus corrupti nihil exercitationem? Iusto voluptatem dignissimos

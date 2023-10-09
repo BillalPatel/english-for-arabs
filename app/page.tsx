@@ -17,33 +17,32 @@ import arabicCourseImageOne from "../assets/videos/arabic/arabic-course-one.jpg"
 export default function Home() {
   return (
     <main className="">
-      <Hero />
-      {/* <VideoBox videoLink="https://www.youtube.com/embed/AjOBWmjr09Q" /> */}
+      {/* <Hero /> */}
       <div className="sections | space-y-36">
-        <section>
-          <div className="why-study | text-center space-y-12">
+        <section className="why-study-section | text-center space-y-12 flex flex-col">
+          <div className="space-y-8 header">
             <h1 className="text-5xl font-extrabold">Why Study With Us?</h1>
             <h2 className="text-2xl">
               Improve your Islamic knowledge through our immersive learning
               experience.
             </h2>
-            <div className="info-card-section | flex justify-center">
-              <InfoCard
-                title="High Quality Videos"
-                description="All video content is available in HD quality."
-                imageUrl={videoIcon}
-              />
-              <InfoCard
-                title="English and Arabic"
-                description={"Library of material in both English and Arabic."}
-                imageUrl={translationIcon}
-              />
-              <InfoCard
-                title="Highly Qualified Teachers"
-                description="Teachers from Al-Azhar University in Cairo."
-                imageUrl={qualifiedTeacherIcon}
-              />
-            </div>
+          </div>
+          <div className="info-card-section | flex justify-center flex-col md:flex-row lg:flex-row">
+            <InfoCard
+              title="High Quality Videos"
+              description="All video content is available in HD quality."
+              imageUrl={videoIcon}
+            />
+            <InfoCard
+              title="English and Arabic"
+              description={"Library of material in both English and Arabic."}
+              imageUrl={translationIcon}
+            />
+            <InfoCard
+              title="Highly Qualified Teachers"
+              description="Teachers from Al-Azhar University in Cairo."
+              imageUrl={qualifiedTeacherIcon}
+            />
           </div>
         </section>
         <section className="explore-english-courses | text-center space-y-12">
@@ -54,7 +53,7 @@ export default function Home() {
               levels.
             </h2>
           </div>
-          <div className="course-cards | flex justify-evenly w-full space-x-16">
+          <div className="course-cards | flex md:justify-evenly lg:justify-evenly w-full md:space-x-16 lg:space-x-16 flex-col md:flex-row lg:flex-row">
             <CourseCard
               courseTitle="Course One"
               courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
@@ -84,7 +83,7 @@ export default function Home() {
               عدد متزايد من دورات اللغة العربية الفصحى
             </h2>
           </div>
-          <div className="course-cards | flex justify-evenly w-full space-x-10">
+          <div className="course-cards | flex md:justify-evenly lg:justify-evenly w-full md:space-x-16 lg:space-x-16 flex-col md:flex-row lg:flex-row">
             <CourseCard
               courseTitle="Course One"
               courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
@@ -107,7 +106,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="teacher-info | text-center space-y-8">
+        {/* <section className="teacher-info | text-center space-y-8">
           <h1 className="text-5xl font-extrabold">Meet Your Teacher</h1>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
@@ -117,7 +116,7 @@ export default function Home() {
             <Image className="w-auto h-40" src={teacherImage} alt="" />
           </div>
           <Button buttonText={"Learn more"} />
-        </section>
+        </section> */}
       </div>
     </main>
   );

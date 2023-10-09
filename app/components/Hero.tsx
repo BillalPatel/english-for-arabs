@@ -20,29 +20,10 @@ export function Hero() {
         renderCenterRightControls={null}
         renderBottomCenterControls={null}
       >
-        <div className="carousel-one | w-2/4 mx-auto">
-          <div className="space-y-6">
-            <h1 className="header | text-6xl text-black">
-              Aal-Imran Quran School
-            </h1>
-            <p className="text-2xl text-black">
-              New videos posted regularly by English speaking teachers from
-              Egypt.
-            </p>
-          </div>
-          <div className="my-14">
-            <Button buttonText="Find out more" />
-          </div>
-          {/* <Image
-            src={lanternImage}
-            alt={""}
-            className="lantern | relative -top-16 left-56 w-1/4 h-48"
-          /> */}
-        </div>
         <div className="carousel-two | w-3/5 mx-auto flex flex-row">
           <div>
-            <div className="w-3/4 space-y-6 text-right">
-              <div className="flex flex-row">
+            <div className="space-y-6 text-right">
+              {/* <div className="flex flex-row">
                 <Image
                   src={lanternImage}
                   alt={""}
@@ -53,7 +34,7 @@ export function Hero() {
                   alt={""}
                   className="lantern | relative h-48 w-auto top-44"
                 />
-              </div>
+              </div> */}
               <h1 className="header | text-8xl text-black text-right">
                 مدرسة آل عمران القرآنية
               </h1>
@@ -62,7 +43,7 @@ export function Hero() {
                 الإنجليزية من مصر.
               </p>
             </div>
-            <div className="w-3/4 text-right my-14">
+            <div className="text-right my-14">
               <Button buttonText="اكتشف المزيد" />
             </div>
           </div>
