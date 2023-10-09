@@ -17,7 +17,7 @@ import arabicCourseImageOne from "../assets/videos/arabic/arabic-course-one.jpg"
 export default function Home() {
   return (
     <main className="">
-      {/* <Hero /> */}
+      <Hero />
       <div className="sections | space-y-36">
         <section className="why-study-section | text-center space-y-12 flex flex-col">
           <div className="space-y-8 header">

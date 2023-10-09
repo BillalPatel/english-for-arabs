@@ -1,14 +1,10 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
 
 import { VideoBox } from "../components/VideoBox";
 
-// import "../app/globals.css";
-
 export default function Video() {
   return (
-    <div className="temp-video-page | mt-6" id="">
+    <div className="temp-video-page">
       <h1 className="text-3xl font-bold">English Course</h1>
       <section className="video-section | my-10">
         <div className="video-box | flex flex-row justify-center self-center w-full">
