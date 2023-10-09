@@ -62,6 +62,26 @@ export default function Home() {
               // animation={"fade"}
               renderCenterLeftControls={null}
               renderCenterRightControls={null}
+              renderBottomCenterControls={({
+                slideCount,
+                currentSlide,
+                goToSlide,
+              }) => (
+                <div className="slider-control-bottomcenter">
+                  <ul className="flex flex-row space-x-3">
+                    {[...Array(slideCount)].map((e, key) => (
+                      <li
+                        className={`currentSlide == key ? "active" : undefined`}
+                        key={key}
+                      >
+                        <button type="button" onClick={() => goToSlide(key)}>
+                          <div className="w-3 h-3 bg-black rounded-full dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"></div>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
               // withoutControls
               swiping
             >
