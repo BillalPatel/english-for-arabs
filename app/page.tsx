@@ -54,10 +54,84 @@ export default function Home() {
             </h2>
           </div>
           {/* <div className="course-cards | flex md:justify-evenly lg:justify-evenly w-full md:space-x-16 lg:space-x-16 flex-col md:flex-row lg:flex-row"> */}
-          <div className="course-cards | flex flex-col">
+          <div className="course-cards-mobile | flex md:hidden lg:hidden flex-col w-full mx-auto">
+            <Carousel
+              cellAlign="center"
+              // slidesToScroll={"auto"}
+              slidesToShow={1}
+              // animation={"fade"}
+              renderCenterLeftControls={null}
+              renderCenterRightControls={null}
+              // withoutControls
+              swiping
+            >
+              <CourseCard
+                courseTitle="Course One"
+                courseDescription="Lorem ipsum dolor sit amet."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Two"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Three"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Four"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Five"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Six"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Four"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Five"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Six"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Four"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Five"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+              <CourseCard
+                courseTitle="Course Six"
+                courseDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                courseImageUrl={arabicCourseImageOne}
+              />
+            </Carousel>
+          </div>
+          <div className="course-cards-desktop | hidden md:flex lg:flex flex-col">
             <Carousel
               cellAlign="left"
-              slidesToShow={4}
+              slidesToScroll={"auto"}
+              slidesToShow={4.25}
               animation={"fade"}
               // renderCenterLeftControls={null}
               // renderCenterRightControls={null}
