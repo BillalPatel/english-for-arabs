@@ -28,7 +28,7 @@ export default function Video() {
       </section>
       <section className="translation-section | space-y-2">
         <h2 className="text-2xl font-semibold ">Translation</h2>
-        <p className="text-lg">
+        <p className="text-lg text-left">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias
           perferendis sit, impedit quasi itaque, ipsam perspiciatis optio sunt,
           temporibus corrupti nihil exercitationem? Iusto voluptatem dignissimos
