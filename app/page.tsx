@@ -54,19 +54,14 @@ export default function Home() {
             </h2>
           </div>
           {/* <div className="course-cards | flex md:justify-evenly lg:justify-evenly w-full md:space-x-16 lg:space-x-16 flex-col md:flex-row lg:flex-row"> */}
-          <div className="course-cards-mobile | flex md:hidden lg:hidden flex-col w-full mx-auto">
+          <div className="course-cards-mobile | flex md:hidden lg:hidden flex-col w-screen mx-auto">
             <Carousel
               cellAlign="center"
-              // slidesToScroll={"auto"}
               slidesToShow={1.25}
-              animation={"zoom"}
+              // animation={"zoom"}
               renderCenterLeftControls={null}
               renderCenterRightControls={null}
-              renderBottomCenterControls={({
-                slideCount,
-                currentSlide,
-                goToSlide,
-              }) => (
+              renderBottomCenterControls={({ slideCount, goToSlide }) => (
                 <div className="slider-control-bottomcenter">
                   <ul className="flex flex-row space-x-3">
                     {[...Array(slideCount)].map((e, key) => (
@@ -75,7 +70,7 @@ export default function Home() {
                         key={key}
                       >
                         <button type="button" onClick={() => goToSlide(key)}>
-                          <div className="w-3 h-3 bg-black rounded-full dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"></div>
+                          <div className="carousel-buttons | w-2 h-2 bg-black rounded-full dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"></div>
                         </button>
                       </li>
                     ))}
