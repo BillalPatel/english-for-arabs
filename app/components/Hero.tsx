@@ -5,6 +5,7 @@ import Image from "next/image";
 import Carousel from "nuka-carousel";
 
 import lanternImage from "../../assets/islamic-lantern-svgrepo-com.svg";
+import design from "../../assets/design.png";
 
 import { Button } from "./Button";
 export function Hero() {
@@ -47,6 +48,9 @@ export function Hero() {
               <Button buttonText="اكتشف المزيد" />
             </div>
           </div>
+          <>
+            <Image src={design} alt="" />
+          </>
         </div>
       </Carousel>
     </div>
