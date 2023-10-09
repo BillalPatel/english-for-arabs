@@ -16,7 +16,7 @@ export function CourseCard(props: CourseCardProps) {
     >
       <h1 className="text-3xl font-extrabold">{courseTitle}</h1>
       <Image
-        className="w-auto h-full mx-auto duration-300 ease-in-out md:h-48 lg:h-48 rounded-2xl hover:scale-110"
+        className="w-auto h-auto mx-auto duration-300 ease-in-out md:h-48 lg:h-48 rounded-2xl hover:scale-110"
         src={courseImageUrl}
         alt="Video thumbnail"
       />
