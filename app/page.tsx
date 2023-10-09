@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import { Hero } from "./components/Hero";
 import { InfoCard } from "./components/InfoCard";
-// import { VideoBox } from "./components/VideoBox";
 import { Button } from "./components/Button";
 import { CourseCard } from "./components/CourseCard";
 
@@ -12,8 +11,6 @@ import qualifiedTeacherIcon from "../assets/certificate-icon.svg";
 import teacherImage from "../assets/teacher-medium-skin-tone-svgrepo-com.svg";
 
 import arabicCourseImageOne from "../assets/videos/arabic/arabic-course-one.jpg";
-// import courseImage from "../assets/video-icon.svg";
-
 export default function Home() {
   return (
     <main className="">

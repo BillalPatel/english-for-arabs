@@ -10,10 +10,10 @@ import displayEng from "../../assets/hero-right-to-left.svg";
 import { Button } from "./Button";
 export function Hero() {
   return (
-    <div className="hero | flex flex-col md:flex-row lg:flex-row justify-between px-4 py-2 md:p-12 lg:p-12 space-y-10 mx-auto md:mt-10 lg:mt-10 mb-24 md:lg:mb-32 lg:mb-32">
+    <div className="hero | flex flex-col md:flex-row lg:flex-row justify-between px-4 py-2 md:p-12 lg:p-12 space-y-10 mx-auto md:mt-10 lg:mt-10 mb-24">
       <Carousel
         autoplay
-        autoplayInterval={3000}
+        autoplayInterval={2500}
         wrapAround={true}
         animation={"fade"}
         renderCenterLeftControls={null}
@@ -21,7 +21,7 @@ export function Hero() {
         renderBottomCenterControls={null}
       >
         <div className="carousel-one | w-11/12 md:w-9/12 lg:w-9/12 mx-auto flex flex-row">
-          <div className="space-y-6 md:w-7/12 lg:w-7/12 md:space-y-10 lg:space-y-10">
+          <div className="mx-auto space-y-3 md:w-6/12 lg:w-6/12 md:space-y-10 lg:space-y-10">
             <h1 className="header | text-3xl md:text-6xl lg:text-6xl text-black">
               Aal-Imran Quran School
             </h1>
@@ -29,7 +29,7 @@ export function Hero() {
               New videos posted regularly by English speaking teachers from
               Egypt.
             </p>
-            <div className="mx-auto">
+            <div className="mx-auto my-10">
               <Button buttonText="Find out more" />
             </div>
           </div>
@@ -40,13 +40,13 @@ export function Hero() {
           />
         </div>
         <div className="carousel-two | w-10/12 md:w-9/12 lg:w-9/12 mx-auto flex flex-col md:flex-row lg:flex-row">
-          <div className="flex flex-row text-right md:space-y-6 lg:space-y-6 md:space-x-16 lg:space-x-16">
+          <div className="flex flex-row mx-auto text-right md:space-y-6 lg:space-y-6 md:space-x-16 lg:space-x-16">
             <Image
               src={displayAr}
               alt="Hero"
               className="image | hidden md:h-96 lg:h-96 w-auto h-56 md:flex lg:flex"
             />
-            <div className="space-y-4 md:space-y-10 lg:space-y-10 md:w-7/12 lg:w-7/12">
+            <div className="space-y-3 md:space-y-10 lg:space-y-10 md:w-6/12 lg:w-6/12">
               <h1 className="header | text-3xl lg:text-8xl md:text-8xl text-black text-right">
                 مدرسة آل عمران القرآنية
               </h1>
