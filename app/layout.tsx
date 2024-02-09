@@ -3,7 +3,7 @@ import { Montserrat, Noto_Sans_Arabic } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
 const montserrat = Montserrat({

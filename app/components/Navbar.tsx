@@ -9,7 +9,7 @@ import desktopIconImage from "../../assets/logo-with-name.svg";
 import openHamburgerMenuIcon from "../../assets/icon-hamburger.svg";
 import closeHamburgerMenuIcon from "../../assets/icon-close.svg";
 
-export function Navbar() {
+export default function Navbar() {
   const [isHamburgerMenuClosed, setIsHamburgerMenuClosed] = useState(false);
 
   function closeHamburgerMenu() {
@@ -46,7 +46,7 @@ export function Navbar() {
           <Link href="/about">Courses</Link>
         </li>
         <li className="relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gold after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
-          <Link href="/prices">Prices</Link>
+          <Link href="#prices">Prices</Link>
         </li>
         <li className="relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gold after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
           <Link href="/contact-us">Contact us</Link>
