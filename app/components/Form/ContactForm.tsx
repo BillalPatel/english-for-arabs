@@ -24,7 +24,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form className="gap-1 space-y-6 flex flex-col justify-items-center justify-self-center place-content-center" onSubmit={handleSubmit(onSubmit)}>
+    <form className="gap-1 space-y-6 flex flex-col justify-items-center justify-self-center place-content-center md:w-4/6 lg:w-4/6 mx-auto" onSubmit={handleSubmit(onSubmit)}>
       <div className="space-y-2">
         <Input
           {...register("firstName", {
