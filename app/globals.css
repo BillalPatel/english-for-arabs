@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
 
-/** @type {import('tailwindcss').Config} */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,25 +11,3 @@ html {
 body {
   overflow-x: hidden;
 }
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-@layer base {
-  body {
-    background-color: #FEFCF7;
-
-  }
-} */

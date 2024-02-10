@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.className} bg-offWhite text-black`}
     >
-      <body className={"mx-6 md:mx-20 lg:mx-20"}>
+      <body>
         <Navbar />
         {children}
         <Footer />

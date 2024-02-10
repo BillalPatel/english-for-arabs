@@ -6,8 +6,8 @@ import { useState } from "react";
 
 import iconImage from "../../assets/logo.svg";
 import desktopIconImage from "../../assets/logo-with-name.svg";
-import openHamburgerMenuIcon from "../../assets/icon-hamburger.svg";
-import closeHamburgerMenuIcon from "../../assets/icon-close.svg";
+import openHamburgerMenuIcon from "../../assets/icons/icon-hamburger.svg";
+import closeHamburgerMenuIcon from "../../assets/icons/icon-close.svg";
 
 export default function Navbar() {
   const [isHamburgerMenuClosed, setIsHamburgerMenuClosed] = useState(false);
@@ -17,7 +17,8 @@ export default function Navbar() {
   }
 
   return (
-    <div className="menubar | flex justify-between py-4 md:py-7 lg:py-3 md:px-20 lg:px-20 w-full">
+    // <nav className="navbar | flex justify-between py-4 md:py-7 lg:py-3 md:px-20 lg:px-20 w-full bg-opacity-0">
+    <nav className="navbar | absolute flex justify-between py-4 md:py-7 lg:py-3 md:px-20 lg:px-20 w-full bg-none opacity-100 z-50">
       <div className="logo-image">
         <Image
           src={iconImage}
@@ -27,7 +28,7 @@ export default function Navbar() {
         <Image
           src={desktopIconImage}
           alt={""}
-          className="desktop-logo | hidden md:flex h-24 lg:h-24 w-auto"
+          className="desktop-logo | hidden md:flex h-24 lg:h-14 w-auto"
         />
       </div>
       <Image
@@ -79,6 +80,6 @@ export default function Navbar() {
           </div>
         </>
       )}
-    </div>
+    </nav>
   );
 }

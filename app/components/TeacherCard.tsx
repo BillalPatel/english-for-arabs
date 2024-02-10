@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import teacherImage from "../../assets/ahmed.jpeg";
+import teacherImage from "../../assets/teachers/ahmed.jpeg";
 import expandVideoIcon from "../../assets/expand-link.svg";
 
 export default function TeacherCard() {
@@ -14,35 +14,11 @@ export default function TeacherCard() {
     setShowVideoModal(false);
   }
 
-  //   return (
-  //     <div className="flex flex-col justify-center justify-items-center lg:max-w-sm py-4 space-y-3 border-2 rounded-lg">
-  //       <h2 className="text-2xl">Ahmed Mounir</h2>
-  //       <Image
-  //         className="w-36 h-36 rounded-lg mx-auto"
-  //         src={teacherImage}
-  //         alt="Teacher"
-  //       />
-  //       <div
-  //         className="flex flex-row space-x-2 mx-auto hover:opacity-50 cursor-pointer"
-  //         onClick={handleExpandVideoClick}
-  //       >
-  //         <Image src={expandVideoIcon} alt={"Open link"} />
-  //         <p className="text-sm">See video</p>
-  //       </div>
-  //       <ul className="text-sm list-disc text-left mx-auto">
-  //         <li>Studied at Al-Azhar Academy</li>
-  //         <li>Specialises in Qur'an and Arabic</li>
-  //         <li>A very good guy ;)</li>
-  //       </ul>
-  //     </div>
-  //   );
-  // }
-
   return (
-    <div className="flex flex-col justify-center justify-items-center lg:max-w-sm py-4 space-y-3 border-2 rounded-lg">
+    <div className="flex flex-col justify-center justify-items-center lg:max-w-sm py-4 space-y-3 border-2 rounded-lg hover:scale-105 duration-300 border-blue">
       <h2 className="text-2xl">Ahmed Mounir</h2>
       <Image
-        className="w-48 h-48 lg:w-36 lg:h-36 rounded-lg mx-auto"
+        className="w-48 h-48 lg:w-36 lg:h-36  rounded-full mx-auto"
         src={teacherImage}
         alt="Teacher"
       />
@@ -53,7 +29,7 @@ export default function TeacherCard() {
         <Image src={expandVideoIcon} alt={"Open link"} />
         <p className="text-sm">See video</p>
       </div>
-      <ul className="text-lg md:text-base lg:text-sm list-disc text-left mx-auto">
+      <ul className="text-lg md:text-base lg:text-sm list-disc text-left mx-auto marker:text-brown">
         <li>Studied at Al-Azhar Academy</li>
         <li>{"Specialises in Qur'an and Arabic"}</li>
         <li>A very good guy ;)</li>

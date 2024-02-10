@@ -8,6 +8,8 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      blue: "#035B73",
+      brown: "#C2912E",
       gold: "#FEB601",
       lightGold: "#F8C91F",
       darkGrey: "#A9A9A9",
