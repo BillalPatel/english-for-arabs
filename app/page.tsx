@@ -51,7 +51,6 @@ export default function Home() {
       </section> */}
 
       <div className="relative">
-
         <Navbar />
 
         <Image
@@ -110,7 +109,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="teacher-info | text-center space-y-8">
+        <section className="teacher-info | text-center space-y-8" id="teachers">
           <h1 className="text-5xl font-extrabold">Meet Your Teachers</h1>
           <h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
@@ -125,6 +124,7 @@ export default function Home() {
         </section>
 
         {/* How it works section - https://ulumalazhar.com/course/arabic-studies/ */}
+        {/* Courses section - arabic, etc. */}
 
         <section className="space-y-20" id="prices">
           <div className="prices | text-3xl text-center space-y-6 md:w-5/6 lg:w-4/6 mx-auto">
@@ -178,22 +178,7 @@ export default function Home() {
         </section>
 
         <section>
-          {/* <div>
-            <label className="block text-gray-700 text-sm mb-2">
-              First name
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              // id={id}
-              // type={type}
-              // name={name}
-              // onBlur={onBlurHandler}
-              placeholder="first name"
-              // value={value}
-            />
-          </div> */}
-
-          <section className="mx-auto space-y-4">
+          <section className="mx-auto space-y-4" id="contact">
             <h1 className="text-5xl font-extrabold text-center">
               Book a Lesson
             </h1>

@@ -38,19 +38,19 @@ export default function Navbar() {
       />
       <ul className="menubar-links | hidden md:flex lg:flex md:flex-row lg:flex-row md:self-center lg:self-center space-x-7 font-semibold text-black">
         <li className="relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gold after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
-          <Link href="/...">English speakers</Link>
+          <Link href="#why-study">Aal-Imran</Link>
         </li>
         <li className="relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gold after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
-          <Link href="/...">Our teachers</Link>
+          <Link href="#teachers">Our teachers</Link>
         </li>
         <li className="relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gold after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
-          <Link href="/about">Courses</Link>
+          <Link href="#courses">Courses</Link>
         </li>
         <li className="relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gold after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
           <Link href="#prices">Prices</Link>
         </li>
         <li className="relative text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-gold after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
-          <Link href="/contact-us">Contact us</Link>
+          <Link href="#contact">Contact us</Link>
         </li>
       </ul>
       {isHamburgerMenuClosed && (
