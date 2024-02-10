@@ -100,7 +100,7 @@ export default function ContactForm() {
         )}
       </div>
 
-      <button className="button | rounded-xl px-5 py-3 md:py-4 lg:py-3 md:px-7 lg:px-7 bg-black hover:text-black text-offWhite">
+      <button className="button | rounded-xl px-5 py-3 md:py-4 lg:py-3 md:px-7 lg:px-7 bg-black hover:text-black text-offWhite w-full md:w-40 lg:w-40 mx-auto">
         {isSubmitting ? "Loading..." : "Submit"}
       </button>
     </form>
