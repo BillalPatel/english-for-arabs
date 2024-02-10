@@ -15,6 +15,7 @@ import qualifiedTeacherIcon from "../assets/certificate-icon.svg";
 import laptopIcon from "../assets/laptop.svg";
 import desktopHeroImage from "../assets/hero/hero-desktop.jpeg";
 import Navbar from "./components/Navbar";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -185,13 +186,11 @@ export default function Home() {
             <h2 className="text-center ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h2>
-            {/* <div className="mx-auto flex justify-center w-full"> */}
-
             <ContactForm />
-            {/* </div> */}
           </section>
         </section>
       </div>
+      <ScrollToTopButton />
     </main>
   );
 }
