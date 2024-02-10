@@ -55,7 +55,7 @@ export default function TeacherCard() {
       </div>
       <ul className="text-lg md:text-base lg:text-sm list-disc text-left mx-auto">
         <li>Studied at Al-Azhar Academy</li>
-        <li>Specialises in Qur'an and Arabic</li>
+        <li>{"Specialises in Qur'an and Arabic"}</li>
         <li>A very good guy ;)</li>
       </ul>
 
