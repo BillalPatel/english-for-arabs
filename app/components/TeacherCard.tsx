@@ -60,15 +60,14 @@ export default function TeacherCard() {
       </ul>
 
       {showVideoModal && (
-        <div className="fixed inset-0 flex items-center justify-center z-40 bg-darkGrey top-0">
-          <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
-          <div className="relative z-50 bg-white p-4 w-full max-w-2xl rounded-xl">
+        <div className="fixed inset-0 flex items-center justify-center z-40 bg-opacity-50 top-0">
+          <div className="absolute inset-0 bg-darkGrey opacity-75"></div>
+          <div className="relative z-50 bg-opacity-50 p-4 w-full max-w-2xl rounded-xl">
             <div className="aspect-video">
               <iframe
                 title="YouTube video"
                 className="absolute inset-0 w-full h-full rounded-xl"
                 src="https://www.youtube.com/embed/eWwN726sO90?rel=0&enablejsapi=1"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>

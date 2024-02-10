@@ -136,6 +136,12 @@ export default function Home() {
           </div> */}
 
           <section className="mx-auto">
+            <h1 className="text-5xl font-extrabold">Meet Your Teachers</h1>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate nesciunt natus, commodi sed quod odio cum odit
+              voluptate.
+            </h2>
             <ContactForm />
           </section>
         </section>
