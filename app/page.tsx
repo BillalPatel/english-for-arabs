@@ -75,7 +75,7 @@ export default function Home() {
             className="button | my-5 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-white font-bold hover:text-main whitespace-no-wrap transition duration-300 ease-in-out border-2 border-blue bg-blue rounded-md bg-main hover:bg-white focus:outline-none"
             id="submit-button"
           >
-            Find Out More
+            Start Your Free Trial Now
           </button>
         </div>
       </div>
