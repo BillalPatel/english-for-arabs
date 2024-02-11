@@ -9,7 +9,7 @@ export default function WhatsAppFloatingButton() {
       className="fixed bottom-10 left-10 z-50"
       target="_blank"
     >
-      <button className="h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 flex items-center justify-center">
+      <button className="h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 flex items-center justify-center">
         <Image src={whatsAppIcon} alt="WhatsApp Icon" />
       </button>
     </Link>
