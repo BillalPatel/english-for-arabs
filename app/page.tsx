@@ -60,7 +60,7 @@ export default function Home() {
         <Image
           src={desktopHeroImage}
           alt="Hero"
-          className="h-screen w-full bg-contain -z-50 object-cover opacity-90"
+          className="h-screen w-full bg-contain -z-50 object-cover opacity-100"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 z-40 flex justify-items-center items-center place-items-center place-content-center flex-col space-y-8">
           <div className="flex flex-row w-8/12">
@@ -73,7 +73,7 @@ export default function Home() {
                 teachers.
               </h4>
               <button
-                className="button | my-10 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-white font-bold hover:text-main whitespace-no-wrap transition duration-300 ease-in-out border-2 border-blue bg-blue rounded-md bg-main hover:bg-white focus:outline-none max-w-sm"
+                className="button | my-10 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-blue hover:text-brown font-bold hover:text-main whitespace-no-wrap transition duration-300 ease-in-out bg-white rounded-md bg-main focus:outline-none max-w-sm"
                 id="submit-button"
               >
                 Start Your Free Trial Now

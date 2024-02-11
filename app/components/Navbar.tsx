@@ -4,8 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-import iconImage from "../../assets/logo.svg";
-import desktopIconImage from "../../assets/logo-with-name.svg";
+import logo from "../../assets/logo.svg";
 import openHamburgerMenuIcon from "../../assets/icons/icon-hamburger.svg";
 import closeHamburgerMenuIcon from "../../assets/icons/icon-close.svg";
 
@@ -43,12 +42,12 @@ const Navbar = () => {
     >
       <div className="logo-image">
         <Image
-          src={iconImage}
+          src={logo}
           alt={"Logo"}
           className="logo | h-16 md:hidden lg:hidden w-auto"
         />
         <Image
-          src={desktopIconImage}
+          src={logo}
           alt={"Logo"}
           className="desktop-logo | hidden md:flex h-12 lg:h-14 w-auto"
         />
@@ -59,7 +58,7 @@ const Navbar = () => {
         className="hamburger-menu-icon | z-50 px-5 h-4 w-auto flex self-center md:hidden lg:hidden cursor-pointer"
         onClick={openHamburgerMenu}
       />
-      <ul className="menubar-links | hidden md:flex lg:flex md:flex-row lg:flex-row md:self-center lg:self-center md:space-x-6 lg:space-x-7 font-semibold text-black">
+      <ul className="menubar-links | hidden md:flex lg:flex md:flex-row lg:flex-row md:self-center lg:self-center md:space-x-6 lg:space-x-7 font-semibold text-white">
         <li className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#why-study">Aal-Imran</Link>
         </li>
@@ -72,7 +71,7 @@ const Navbar = () => {
         <li className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#prices">Prices</Link>
         </li>
-        <li className="relative text-sm w-fit block border-2 rounded px-2 md:py-1 py-2 place-self-center cursor-pointer hover:bg-blue hover:border-blue hover:text-white duration-100">
+        <li className="relative text-sm w-fit block border-2 rounded px-2 md:py-1 py-2 place-self-center cursor-pointer hover:bg-none hover:border-brown hover:text-brown duration-100">
           <Link href="#contact">Contact Us</Link>
         </li>
       </ul>
