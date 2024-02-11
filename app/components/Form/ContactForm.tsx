@@ -23,18 +23,18 @@ export default function ContactForm() {
   const onSubmit: SubmitHandler<Inputs> = function (data) {
     console.log(data);
 
-    // emailjs
-    //   .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-    //     publicKey: "YOUR_PUBLIC_KEY",
-    //   })
-    //   .then(
-    //     () => {
-    //       console.log("SUCCESS!");
-    //     },
-    //     (error) => {
-    //       console.log("FAILED...", error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm("service_yuh4t7w", "template_6js6ypl", form.current, {
+        publicKey: "pNxkKYMTbhrNse7Hq",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   return (

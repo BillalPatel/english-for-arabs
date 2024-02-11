@@ -49,7 +49,7 @@ const Navbar = () => {
         <Image
           src={logo}
           alt={"Logo"}
-          className="desktop-logo | hidden md:flex h-12 lg:h-14 w-auto"
+          className="desktop-logo | hidden md:flex h-16 lg:h-20 w-auto"
         />
       </div>
       <Image
@@ -71,9 +71,12 @@ const Navbar = () => {
         <li className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#prices">Prices</Link>
         </li>
-        <li className="relative text-sm w-fit block border-2 rounded px-2 md:py-1 py-2 place-self-center cursor-pointer hover:bg-none hover:border-brown hover:text-brown duration-100">
-          <Link href="#contact">Contact Us</Link>
-        </li>
+        <Link
+          href="#contact"
+          className="relative text-sm w-fit block border-2 rounded px-2 md:py-1 py-2 place-self-center cursor-pointer hover:bg-none hover:border-brown hover:text-brown duration-100"
+        >
+          <p>Contact Us</p>
+        </Link>
       </ul>
       {isHamburgerMenuOpen && (
         <menu className="menu fixed top-0 left-0 w-full h-full bg-darkGrey flex justify-center items-center z-50">

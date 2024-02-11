@@ -19,6 +19,7 @@ import qualifiedTeacherIcon from "../assets/certificate-icon.svg";
 import laptopIcon from "../assets/laptop.svg";
 import desktopHeroImage from "../assets/hero/hero-desktop.jpg";
 import familyImage from "../assets/hero/family.svg";
+import courseImage from "../assets/courses/course.jpg";
 
 export default function Home() {
   return (
@@ -67,18 +68,20 @@ export default function Home() {
           <div className="flex flex-row w-8/12">
             <div className="w-2/4 flex align-middle flex-col place-self-center space-y-4 text-white">
               <h1 className="text-3xl lg:text-6xl text-left w-3/5 lg:w-full">
-                Learn Online
+                Aal-Imran Quran Academy
               </h1>
               <h4 className="text-xl text-left wleading-10 hidden lg:block w-9/12">
                 Join our platform for 1-2-1 lessons from highly skilled
                 teachers.
               </h4>
-              <button
-                className="button | my-10 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-blue hover:text-brown font-bold hover:text-main whitespace-no-wrap transition duration-300 ease-in-out bg-white rounded-md bg-main focus:outline-none max-w-sm"
-                id="submit-button"
-              >
-                Start Your Free Trial Now
-              </button>
+              <div>
+                <button
+                  className="button | my-8 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-blue hover:text-brown font-bold hover:text-main whitespace-no-wrap transition duration-300 ease-in-out bg-white rounded-md bg-main focus:outline-none max-w-sm"
+                  id="submit-button"
+                >
+                  Start Your Free Trial Now
+                </button>
+              </div>
             </div>
             <div className="w-2/4">
               <Image
@@ -145,22 +148,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-evenly">
             <CourseCard
               courseTitle={"Qur'an Memorization"}
-              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek pof"
+              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek"
+              courseImageUrl={courseImage}
+            />
+            <CourseCard
+              courseTitle={"Qur'an Memorization"}
+              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek"
               courseImageUrl={undefined}
             />
             <CourseCard
               courseTitle={"Qur'an Memorization"}
-              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek pof"
+              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek"
               courseImageUrl={undefined}
             />
             <CourseCard
               courseTitle={"Qur'an Memorization"}
-              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek pof"
-              courseImageUrl={undefined}
-            />
-            <CourseCard
-              courseTitle={"Qur'an Memorization"}
-              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek pof"
+              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek"
               courseImageUrl={undefined}
             />
           </div>
