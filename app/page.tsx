@@ -17,6 +17,7 @@ import desktopHeroImage from "../assets/hero/hero-desktop.jpeg";
 import Navbar from "./components/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
+import CourseCard from "./components/CourseCard";
 
 export default function Home() {
   return (
@@ -125,8 +126,37 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="courses-info | text-center space-y-8" id="courses">
+          <h1 className="text-5xl font-extrabold">Courses</h1>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            nesciunt natus, commodi sed quod odio cum odit voluptate.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-evenly">
+            <CourseCard
+              courseTitle={"Qur'an Memorization"}
+              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek pof"
+              courseImageUrl={undefined}
+            />
+            <CourseCard
+              courseTitle={"Qur'an Memorization"}
+              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek pof"
+              courseImageUrl={undefined}
+            />
+            <CourseCard
+              courseTitle={"Qur'an Memorization"}
+              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek pof"
+              courseImageUrl={undefined}
+            />
+            <CourseCard
+              courseTitle={"Qur'an Memorization"}
+              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek pof"
+              courseImageUrl={undefined}
+            />
+          </div>
+        </section>
+
         {/* How it works section - https://ulumalazhar.com/course/arabic-studies/ */}
-        {/* Courses section - arabic, etc. */}
 
         <section className="space-y-20" id="prices">
           <div className="prices | text-3xl text-center space-y-6 md:w-5/6 lg:w-4/6 mx-auto">
