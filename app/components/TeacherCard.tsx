@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import teacherImage from "../../assets/teachers/ahmed.jpeg";
-import expandVideoIcon from "../../assets/expand-link.svg";
+import openLinkIcon from "../../assets/icons/open-link.svg";
+import videoIcon from "../../assets/icons/video.svg";
+import Link from "next/link";
 
 export default function TeacherCard() {
   const [showVideoModal, setShowVideoModal] = useState(false);
@@ -18,18 +20,28 @@ export default function TeacherCard() {
     <div className="flex flex-col justify-center justify-items-center lg:max-w-sm py-4 space-y-3 border-2 rounded-lg hover:scale-105 duration-300 border-blue">
       <h2 className="text-2xl">Ahmed Mounir</h2>
       <Image
-        className="w-48 h-48 lg:w-36 lg:h-36  rounded-full mx-auto"
+        className="w-48 h-48 lg:w-36 lg:h-36 rounded-full mx-auto"
         src={teacherImage}
         alt="Teacher"
       />
-      <div
-        className="flex flex-row space-x-2 mx-auto hover:opacity-50 cursor-pointer"
-        onClick={handleExpandVideoClick}
-      >
-        <Image src={expandVideoIcon} alt={"Open link"} />
-        <p className="text-sm">See video</p>
+      <div className="space-y-1 mx-auto">
+        <Link
+          className="flex flex-row space-x-2 mx-auto hover:opacity-50 cursor-pointer"
+          target="_blank"
+          href="/"
+        >
+          <Image src={openLinkIcon} alt="Open link" />
+          <p className="text-sm">View profile</p>
+        </Link>
+        <div
+          className="flex flex-row space-x-2 mx-auto hover:opacity-50 cursor-pointer"
+          onClick={handleExpandVideoClick}
+        >
+          <Image src={videoIcon} alt="Open video" />
+          <p className="text-sm">See video</p>
+        </div>
       </div>
-      <ul className="text-lg md:text-base lg:text-sm list-disc text-left mx-auto marker:text-brown">
+      <ul className="lg:text-sm list-disc text-left mx-auto pl-2 marker:text-brown">
         <li>Studied at Al-Azhar Academy</li>
         <li>{"Specialises in Qur'an and Arabic"}</li>
         <li>A very good guy ;)</li>

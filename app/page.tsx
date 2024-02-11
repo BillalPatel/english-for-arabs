@@ -63,6 +63,7 @@ export default function Home() {
           className="h-screen w-full bg-contain -z-50 object-cover opacity-100"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 z-40 flex justify-items-center items-center place-items-center place-content-center flex-col space-y-8">
+          {/* <div className="flex lg:flex-row flex-col w-8/12"> */}
           <div className="flex flex-row w-8/12">
             <div className="w-2/4 flex align-middle flex-col place-self-center space-y-4 text-white">
               <h1 className="text-3xl lg:text-6xl text-left w-3/5 lg:w-full">
