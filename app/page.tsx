@@ -58,7 +58,7 @@ export default function Home() {
         <Image
           src={desktopHeroImage}
           alt="Hero"
-          className="h-screen w-full bg-contain -z-50 object-cover opacity-50"
+          className="h-screen w-full bg-contain -z-50 object-cover opacity-100"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 z-40 flex justify-items-center items-center place-items-center place-content-center flex-col space-y-8">
           <h1 className="text-4xl lg:text-6xl text-center w-3/5 lg:w-full">
@@ -191,6 +191,7 @@ export default function Home() {
           </section>
         </section>
       </div>
+
       <ScrollToTopButton />
       <WhatsAppFloatingButton />
     </main>
