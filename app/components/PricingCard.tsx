@@ -26,16 +26,16 @@ export default function PricingCard({
           <p>per lesson</p>
         </div>
       </div>
-      <div className="space-y-1">
+      <div className="space-y-2">
         <h4 className="text-xl font-bold">{length} minutes</h4>
         <p className="text-lg">
-          <span className=" underline decoration-brown decoration-2 underline-offset-4">
+          <span className="border-2 border-brown p-1 py-0.5 rounded-lg">
             {weeklyLessons}
           </span>{" "}
           lessons a week
         </p>
         <p className="text-lg">
-          <span className=" underline decoration-brown decoration-2 underline-offset-4">
+          <span className=" border-2 border-brown p-1 py-0.5 rounded-lg">
             {monthlyLessons}
           </span>{" "}
           lessons a month
