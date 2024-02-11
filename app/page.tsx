@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="sections | space-y-36 mx-6 md:mx-20 lg:mx-20 mt-16">
+      <div className="sections | space-y-36 mx-6 md:mx-20 lg:mx-20 mt-16 md:mt-20 lg:mt-24">
         <section
           className="why-study | text-center space-y-12 flex flex-col"
           id="why-study"
