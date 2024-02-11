@@ -10,14 +10,15 @@ import { InfoCard } from "./components/InfoCard";
 import PricingCard from "./components/PricingCard";
 import ContactForm from "./components/Form/ContactForm";
 import TeacherCard from "./components/TeacherCard";
+import Navbar from "./components/Navbar";
+import CourseCard from "./components/CourseCard";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
 import englishIcon from "../assets/english.svg";
 import qualifiedTeacherIcon from "../assets/certificate-icon.svg";
 import laptopIcon from "../assets/laptop.svg";
-import desktopHeroImage from "../assets/hero/hero-desktop.jpeg";
-import Navbar from "./components/Navbar";
-import ScrollToTopButton from "./components/ScrollToTopButton";
-import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
-import CourseCard from "./components/CourseCard";
+import desktopHeroImage from "../assets/hero/hero-desktop.png";
+import familyImage from "../assets/hero/family.png";
 
 export default function Home() {
   return (
@@ -59,25 +60,33 @@ export default function Home() {
         <Image
           src={desktopHeroImage}
           alt="Hero"
-          className="h-screen w-full bg-contain -z-50 object-cover opacity-100"
+          className="h-screen w-full bg-contain -z-50 object-cover opacity-90"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 z-40 flex justify-items-center items-center place-items-center place-content-center flex-col space-y-8">
-          <h1 className="text-4xl lg:text-6xl text-center w-3/5 lg:w-full">
-            Learn Islamic Studies, <br /> Quran, and Arabic Online
-          </h1>
-          <h4 className="text-3xl text-center w-3/5 leading-10 hidden lg:block">
-            Join our platform for 1-2-1 lessons from highly skilled teachers.
-            Explore the depths of Islamic knowledge with us.
-            {/* <span className="hidden md:block lg:block">
-              Support Local Creators
-            </span> */}
-          </h4>
-          <button
-            className="button | my-5 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-white font-bold hover:text-main whitespace-no-wrap transition duration-300 ease-in-out border-2 border-blue bg-blue rounded-md bg-main hover:bg-white focus:outline-none"
-            id="submit-button"
-          >
-            Start Your Free Trial Now
-          </button>
+          <div className="flex flex-row w-8/12">
+            <div className="w-2/4 flex align-middle flex-col place-self-center space-y-4 text-white">
+              <h1 className="text-3xl lg:text-6xl text-left w-3/5 lg:w-full">
+                Learn Online
+              </h1>
+              <h4 className="text-xl text-left wleading-10 hidden lg:block w-9/12">
+                Join our platform for 1-2-1 lessons from highly skilled
+                teachers.
+              </h4>
+              <button
+                className="button | my-10 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-white font-bold hover:text-main whitespace-no-wrap transition duration-300 ease-in-out border-2 border-blue bg-blue rounded-md bg-main hover:bg-white focus:outline-none max-w-sm"
+                id="submit-button"
+              >
+                Start Your Free Trial Now
+              </button>
+            </div>
+            <div className="w-2/4">
+              <Image
+                src={familyImage}
+                alt="Family"
+                className="h-96 object-cover bg-contain flex align-middle place-self-center"
+              />
+            </div>
+          </div>
         </div>
       </div>
 
