@@ -70,7 +70,7 @@ export default function Home() {
               <h1 className="text-3xl lg:text-6xl text-left w-3/5 lg:w-full">
                 Aal-Imran Quran Academy
               </h1>
-              <h4 className="text-xl text-left wleading-10 hidden lg:block w-9/12">
+              <h4 className="text-xl text-left wleading-10 hidden lg:block w-8/12">
                 Join our platform for 1-2-1 lessons from highly skilled
                 teachers.
               </h4>
