@@ -11,9 +11,9 @@ export default function CourseCard(props: CourseCardProps) {
   const { courseTitle, courseDescription, courseImageUrl } = props;
 
   return (
-    <div className="course-card | border-2 rounded-lg hover:scale-105 duration-300 border-blue space-y-4">
+    <div className="course-card | border-2 rounded-lg hover:scale-105 duration-300 border-blue space-y-4 py-4">
       <Image
-        className="w-full object-cover h-60 mx-auto rounded-t-md"
+        className="w-full object-cover h-60 mx-auto px-4 rounded-xl"
         src={courseImageUrl}
         alt="Course header"
       />
