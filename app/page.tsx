@@ -16,6 +16,7 @@ import laptopIcon from "../assets/laptop.svg";
 import desktopHeroImage from "../assets/hero/hero-desktop.jpeg";
 import Navbar from "./components/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
 
 export default function Home() {
   return (
@@ -191,6 +192,7 @@ export default function Home() {
         </section>
       </div>
       <ScrollToTopButton />
+      <WhatsAppFloatingButton />
     </main>
   );
 }
