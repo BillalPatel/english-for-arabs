@@ -1,6 +1,7 @@
 "use client";
 
 import { useForm, SubmitHandler } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 import Input from "./Input";
 import TextArea from "./TextArea";
 
@@ -21,10 +22,26 @@ export default function ContactForm() {
 
   const onSubmit: SubmitHandler<Inputs> = function (data) {
     console.log(data);
+
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
+        publicKey: "YOUR_PUBLIC_KEY",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   return (
-    <form className="gap-1 space-y-6 flex flex-col justify-items-center justify-self-center place-content-center md:w-4/6 lg:w-4/6 mx-auto" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className="gap-1 space-y-6 flex flex-col justify-items-center justify-self-center place-content-center md:w-4/6 lg:w-4/6 mx-auto"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <div className="space-y-2">
         <Input
           {...register("firstName", {

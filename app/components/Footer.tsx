@@ -182,13 +182,9 @@ export function Footer() {
 
       {/* <!--Copyright section--> */}
       <div className="p-6 mt-4 text-center bg-neutral-200 dark:bg-neutral-700">
-        <span>© 2023 Copyright: </span>
-        <a
-          className="font-semibold text-neutral-600 dark:text-neutral-400"
-          href="https://tailwind-elements.com/"
-        >
-          Aal-Imran Quran School
-        </a>
+        <p className="font-semibold text-neutral-600 dark:text-neutral-400">
+        © 2024 Copyright: Aal-Imran Quran School
+        </p>
       </div>
     </footer>
   );

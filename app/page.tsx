@@ -17,8 +17,8 @@ import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
 import englishIcon from "../assets/english.svg";
 import qualifiedTeacherIcon from "../assets/certificate-icon.svg";
 import laptopIcon from "../assets/laptop.svg";
-import desktopHeroImage from "../assets/hero/hero-desktop.png";
-import familyImage from "../assets/hero/family.png";
+import desktopHeroImage from "../assets/hero/hero-desktop.jpg";
+import familyImage from "../assets/hero/family.svg";
 
 export default function Home() {
   return (
