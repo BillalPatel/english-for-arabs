@@ -1,53 +1,61 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import teacherImage from "../../assets/teachers/ahmed.jpeg";
+import teacherImage from "../../assets/teachers/profile/ahmed.jpeg";
+import teacherVideoImage from "../../assets/teachers/video/sheikh-mahmoud.jpg";
 import openLinkIcon from "../../assets/icons/open-link.svg";
 import videoIcon from "../../assets/icons/video.svg";
-import Link from "next/link";
 
 export default function TeacherCard() {
-  const [showVideoModal, setShowVideoModal] = useState(false);
+  const [showYouTubeVideoModal, setShowYouTubeVideoModal] = useState(false);
+  const [showProfileVideoModal, setShowProfileVideoModal] = useState(false);
 
   function handleExpandVideoClick() {
-    setShowVideoModal(true);
+    setShowYouTubeVideoModal(true);
   }
 
-  function closeModal() {
-    setShowVideoModal(false);
+  function closeYouTubeModal() {
+    setShowYouTubeVideoModal(false);
+  }
+
+  function handleExpandProfileClick() {
+    setShowProfileVideoModal(true);
+  }
+
+  function closeProfileVideoModal() {
+    setShowProfileVideoModal(false);
   }
 
   return (
-    <div className="flex flex-col justify-center justify-items-center lg:max-w-sm py-4 space-y-3 border-2 rounded-lg hover:scale-105 duration-300 border-blue">
-      <h2 className="text-2xl">Ahmed Mounir</h2>
+    <div className="flex flex-col justify-center justify-items-center lg:max-w-sm py-5 space-y-3 border-2 rounded-lg hover:scale-105 duration-300 border-blue">
+      <h2 className="text-2xl font-bold">Ahmed Mounir</h2>
       <Image
         className="w-48 h-48 lg:w-36 lg:h-36 rounded-full mx-auto"
         src={teacherImage}
         alt="Teacher"
       />
       <div className="space-y-1 mx-auto">
-        <Link
+        <div
           className="flex flex-row space-x-2 mx-auto hover:opacity-50 cursor-pointer"
-          target="_blank"
-          href="/"
+          onClick={handleExpandProfileClick}
         >
           <Image src={openLinkIcon} alt="Open link" />
-          <p className="text-sm">View profile</p>
-        </Link>
+          <p className="">View profile</p>
+        </div>
         <div
           className="flex flex-row space-x-2 mx-auto hover:opacity-50 cursor-pointer"
           onClick={handleExpandVideoClick}
         >
           <Image src={videoIcon} alt="Open video" />
-          <p className="text-sm">See video</p>
+          <p className="">See video</p>
         </div>
       </div>
-      <ul className="lg:text-sm list-disc text-left mx-auto pl-2 marker:text-brown">
+      <ul className="lg:text-lg list-disc text-left mx-auto pl-2 marker:text-brown">
         <li>Studied at Al-Azhar Academy</li>
         <li>{"Specialises in Qur'an and Arabic"}</li>
         <li>A very good guy ;)</li>
       </ul>
 
-      {showVideoModal && (
+      {showYouTubeVideoModal && (
         <div className="fixed inset-0 flex items-center justify-center z-40 bg-opacity-50 top-0">
           <div className="absolute inset-0 bg-darkGrey opacity-75"></div>
           <div className="relative z-50 bg-opacity-50 p-4 w-full max-w-2xl rounded-xl">
@@ -63,7 +71,24 @@ export default function TeacherCard() {
           </div>
           <button
             className="absolute bottom-0 left-0 right-0 mx-auto text-white hover:text-black z-50 bg-black p-5 max-w-sm rounded-xl"
-            onClick={closeModal}
+            onClick={closeYouTubeModal}
+          >
+            Close
+          </button>
+        </div>
+      )}
+
+      {showProfileVideoModal && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 top-0">
+          <div className="absolute bg-darkGrey opacity-100"></div>
+          <div className="relative z-50 bg-opacity-50 p-4 w-full max-w-2xl rounded-xl">
+            <div className="">
+              <Image src={teacherVideoImage} alt="Profile" />
+            </div>
+          </div>
+          <button
+            className="absolute bottom-0 left-0 right-0 mx-auto text-white hover:text-black z-50 bg-black p-5 max-w-sm rounded-xl"
+            onClick={closeProfileVideoModal}
           >
             Close
           </button>

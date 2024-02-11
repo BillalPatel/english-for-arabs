@@ -59,21 +59,21 @@ const Navbar = () => {
         onClick={openHamburgerMenu}
       />
       <ul className="menubar-links | hidden md:flex lg:flex md:flex-row lg:flex-row md:self-center lg:self-center md:space-x-6 lg:space-x-7 font-semibold text-white">
-        <li className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
+        <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#why-study">Aal-Imran</Link>
         </li>
-        <li className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
+        <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#teachers">Our Teachers</Link>
         </li>
-        <li className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
+        <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#courses">Courses</Link>
         </li>
-        <li className="relative text-sm w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
+        <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#prices">Prices</Link>
         </li>
         <Link
           href="#contact"
-          className="relative text-sm w-fit block border-2 rounded px-2 md:py-1 py-2 place-self-center cursor-pointer hover:bg-none hover:border-brown hover:text-brown duration-100"
+          className="relative w-fit block border-2 rounded px-2 md:py-1 py-2 place-self-center cursor-pointer hover:bg-none hover:border-brown hover:text-brown duration-100"
         >
           <p>Contact Us</p>
         </Link>
