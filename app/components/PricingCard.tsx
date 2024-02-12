@@ -29,13 +29,13 @@ export default function PricingCard({
       <div className="space-y-2">
         <h4 className="text-xl font-bold">{length} minutes</h4>
         <p className="text-lg">
-          <span className="border-2 border-brown p-1 py-0.5 rounded-lg">
+          <span className="bg-brown px-2 py-1 text-white">
             {weeklyLessons}
           </span>{" "}
           lessons a week
         </p>
         <p className="text-lg">
-          <span className=" border-2 border-brown p-1 py-0.5 rounded-lg">
+        <span className="bg-brown px-2 py-1 text-white">
             {monthlyLessons}
           </span>{" "}
           lessons a month
