@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar | fixed lg:absolute flex justify-between md:py-2 lg:py-3 md:px-20 lg:px-20 w-full ${
+      className={`navbar | fixed md:absolute lg:absolute flex justify-between md:py-2 lg:py-3 md:px-20 lg:px-20 w-full ${
         isScrolled ? "bg-lightGrey" : "bg-none"
       } opacity-100 z-50`}
     >

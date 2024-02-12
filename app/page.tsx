@@ -65,7 +65,7 @@ export default function Home() {
           className="h-screen w-full bg-contain z-30 object-cover"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-items-center items-center place-items-center place-content-center flex-col space-y-8">
-          <div className="flex flex-row w-full md:w-9/12 lg:w-9/12">
+          <div className="flex flex-col md:flex-row lg:flex-row w-full md:w-9/12 lg:w-9/12">
             <div className="w-full md:w-2/4 lg:w-2/4 flex align-middle flex-col place-self-center space-y-7 text-white">
               <h1 className="text-6xl md:text-5xl lg:text-6xl md:text-left lg:text-left text-center w-full font-bold space-y-3">
                 <span className="bg-brown py-2 px-3 text-white">Aal-Imran</span>
@@ -102,7 +102,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="sections | space-y-36 mx-6 md:mx-20 lg:mx-20 mt-16 md:mt-20 lg:mt-24">
+      <div className="block md:hidden lg:hidden mx-auto py-20 bg-brown bg-opacity-80">
+        <Image
+          src={familyImage}
+          alt="Family"
+          id="blur"
+          className="h-full object-cover bg-contain flex align-middle place-self-center"
+        />
+      </div>
+
+      <div className="sections | space-y-28 mx-6 md:mx-20 lg:mx-20 mt-16 md:mt-20 lg:mt-24">
         <section
           className="why-study | text-center space-y-12 flex flex-col"
           id="why-study"

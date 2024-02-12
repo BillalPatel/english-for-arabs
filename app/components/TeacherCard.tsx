@@ -49,7 +49,7 @@ export default function TeacherCard() {
           <p className="">See video</p>
         </div>
       </div>
-      <ul className="lg:text-lg list-disc text-left mx-auto pl-2 marker:text-brown">
+      <ul className="lg:text-lg list-disc text-left mx-auto px-5 marker:text-brown overflow-auto list-inside">
         <li>Studied at Al-Azhar Academy</li>
         <li>{"Specialises in Qur'an and Arabic"}</li>
         <li>A very good guy ;)</li>

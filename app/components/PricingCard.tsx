@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "./Button";
+import Link from "next/link";
 
 interface PricingCardProps {
   tier: string;
@@ -40,9 +41,9 @@ export default function PricingCard({
           </span>{" "}
           lessons a month
         </p>
-        <div className="pt-6">
+        <Link className="pt-6 block" href={"#contact"}>
           <Button buttonText={"Sign Up"} />
-        </div>
+        </Link>
       </div>
     </div>
   );
