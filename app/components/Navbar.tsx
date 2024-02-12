@@ -1,9 +1,8 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-
 import logo from "../../assets/logo.svg";
 import openHamburgerMenuIcon from "../../assets/icons/icon-hamburger.svg";
 import closeHamburgerMenuIcon from "../../assets/icons/icon-close.svg";
@@ -44,12 +43,7 @@ const Navbar = () => {
         <Image
           src={logo}
           alt={"Logo"}
-          className="logo | h-16 md:hidden lg:hidden w-auto"
-        />
-        <Image
-          src={logo}
-          alt={"Logo"}
-          className="desktop-logo | hidden md:flex h-16 lg:h-20 w-auto"
+          className="logo | flex p-2 md:p-0 lg:p-0 md:flex h-16 lg:h-20 w-auto"
         />
       </div>
       <Image
@@ -79,7 +73,7 @@ const Navbar = () => {
         </Link>
       </ul>
       {isHamburgerMenuOpen && (
-        <menu className="menu fixed top-0 left-0 w-full h-full bg-darkGrey flex justify-center items-center z-50">
+        <menu className="menu | fixed top-0 left-0 w-full h-full bg-darkGrey flex justify-center items-center z-50">
           <Image
             src={closeHamburgerMenuIcon}
             alt="Close hamburger menu icon"

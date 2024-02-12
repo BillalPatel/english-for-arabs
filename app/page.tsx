@@ -20,41 +20,12 @@ import laptopIcon from "../assets/laptop.svg";
 import desktopHeroImage from "../assets/hero/hero-desktop.jpg";
 import familyImage from "../assets/hero/family.svg";
 import courseImage from "../assets/courses/course.jpg";
+import Pricing from "./components/Pricing";
 
 export default function Home() {
   return (
     <main className="">
       {/* <Hero /> */}
-
-      {/* <section className="w-full py-5 mb-28">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-            <Image
-              alt="Hero"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square"
-              height="550"
-              src="/placeholder.svg"
-              width="550"
-            />
-            <div className="flex flex-col justify-center space-y-8">
-              <div className="space-y-5">
-                <h1 className="text-2xl md:text-3xl lg:text-3xl w-5/6 lg:w-full font-bold sm:text-5xl xl:text-6xl/none leading-10 text-center mx-auto lg:mx-0 md:text-center lg:text-left">
-                  Learn Islamic Studies, Quran, and Arabic Online
-                </h1>
-                <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400 lg:leading-8 w-4/6 lg:w-full text-center md:text-center lg:text-left mx-auto lg:mx-0">
-                  Join our platform for 1-2-1 lessons from highly skilled
-                  teachers. Explore the depths of Islamic knowledge with us.
-                </p>
-              </div>
-              <div className="flex flex-col gap-4 min-[400px]:flex-row mx-auto lg:mx-0">
-                <Button buttonText={"Pricing"} />
-                <Button buttonText={"Contact Us"} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
       <div className="relative">
         <Navbar />
 
@@ -81,14 +52,14 @@ export default function Home() {
                   "Where you can start learning Qur'an, Islamic studies and Arabic language."
                 }
               </h4>
-              <div className="mx-auto md:mx-0 lg:mx-0">
+              <Link className="mx-auto md:mx-0 lg:mx-0" href={"#contact"}>
                 <button
                   className="button | my-8 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-blue hover:text-brown font-bold text-xl hover:text-main whitespace-no-wrap transition duration-200 ease-in-out bg-white rounded-md bg-main focus:outline-none max-w-sm"
                   id="submit-button"
                 >
                   Start Free Trial
                 </button>
-              </div>
+              </Link>
             </div>
             <div className="w-2/4 hidden md:block lg:block">
               <Image
@@ -102,7 +73,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="block md:hidden lg:hidden mx-auto py-20 bg-brown bg-opacity-80">
+      <div className="block md:hidden lg:hidden mx-auto py-20 bg-brown">
         <Image
           src={familyImage}
           alt="Family"
@@ -195,7 +166,7 @@ export default function Home() {
 
         {/* How it works section - https://ulumalazhar.com/course/arabic-studies/ */}
 
-        <section className="space-y-20" id="prices">
+        <section className="space-y-10" id="prices">
           <div className="prices | text-3xl text-center space-y-6 md:w-5/6 lg:w-4/6 mx-auto">
             <h1 className="text-5xl text-brown font-extrabold text-center">
               Choose Your Plan
@@ -205,47 +176,7 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="mx-auto space-x-5 flex justify-center items-center">
-            <button className="button | rounded px-5 py-3 md:py-4 lg:py-4 md:px-7 lg:px-7 bg-black hover:text-black text-offWhite font-extrabold md:text-xl lg:text-xl">
-              30 mins
-            </button>
-            <button className="button | rounded-xl px-5 py-3 md:py-4 lg:py-4 md:px-7 lg:px-7 bg-darkGrey hover:text-black text-offWhite font-extrabold md:text-xl lg:text-xl">
-              60 mins
-            </button>
-          </div>
-
-          <div className="space-x-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-evenly">
-              <PricingCard
-                tier={"Bronze"}
-                price={"20"}
-                length={"60"}
-                weeklyLessons={2}
-                monthlyLessons={8}
-              />
-              <PricingCard
-                tier={"Bronze"}
-                price={"20"}
-                length={"60"}
-                weeklyLessons={2}
-                monthlyLessons={8}
-              />
-              <PricingCard
-                tier={"Bronze"}
-                price={"20"}
-                length={"60"}
-                weeklyLessons={2}
-                monthlyLessons={8}
-              />
-              <PricingCard
-                tier={"Bronze"}
-                price={"20"}
-                length={"60"}
-                weeklyLessons={2}
-                monthlyLessons={8}
-              />
-            </div>
-          </div>
+          <Pricing />
         </section>
 
         <section className="mx-auto space-y-9" id="contact">
