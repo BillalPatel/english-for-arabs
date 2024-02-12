@@ -65,35 +65,34 @@ export default function Home() {
           className="h-screen w-full bg-contain z-30 object-cover"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-items-center items-center place-items-center place-content-center flex-col space-y-8">
-          {/* <div className="flex lg:flex-row flex-col w-8/12"> */}
           <div className="flex flex-row w-9/12">
             <div className="w-2/4 flex align-middle flex-col place-self-center space-y-7 text-white">
-              <h1 className="text-4xl lg:text-6xl text-left w-3/5 lg:w-full font-bold">
-                Aal-Imran <br />
-                Quran Academy
+              <h1 className="text-4xl lg:text-6xl text-left w-3/5 lg:w-full font-bold space-y-3">
+                <span className="bg-brown py-2 px-3 text-blue">Aal-Imran</span>
+                <h1>Quran Academy</h1>
               </h1>
               <h4 className="text-xl text-left wleading-10 hidden lg:block w-3/4 leading-8">
                 {
-                  "Aal-Imran Academy is a Quranic school where you can learn Qur'an, Arabic language and Islamic studies with a bunch of the best qualified instructors in all fields."
+                  "We are a Quranic school where you can learn Qur'an, Arabic language and Islamic studies with a bunch of the best qualified instructors in all fields."
                 }
               </h4>
               <div>
                 <button
-                  className="button | my-8 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-blue hover:text-brown font-bold text-xl hover:text-main whitespace-no-wrap transition duration-300 ease-in-out bg-white rounded-md bg-main focus:outline-none max-w-sm"
+                  className="button | my-8 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-blue hover:text-brown font-bold text-xl hover:text-main whitespace-no-wrap transition duration-200 ease-in-out bg-white rounded-md bg-main focus:outline-none max-w-sm"
                   id="submit-button"
                 >
                   Start Your Free Trial Now
                 </button>
               </div>
             </div>
-            <div className="w-2/4">
+            {/* <div className="w-2/4">
               <Image
                 src={familyImage}
                 alt="Family"
                 id="blur"
                 className=" h-full object-cover bg-contain flex align-middle place-self-center"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -104,7 +103,9 @@ export default function Home() {
           id="why-study"
         >
           <div className="space-y-8 header">
-            <h1 className="text-5xl font-extrabold">Why Study With Us?</h1>
+            <h1 className="text-5xl text-brown font-extrabold text-center">
+              Why Study With Us?
+            </h1>
             <h2 className="text-2xl">
               Improve your Islamic knowledge through our immersive learning
               experience.
@@ -130,10 +131,12 @@ export default function Home() {
         </section>
 
         <section className="teacher-info | text-center space-y-8" id="teachers">
-          <h1 className="text-5xl font-extrabold">Meet Your Teachers</h1>
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            nesciunt natus, commodi sed quod odio cum odit voluptate.
+          <h1 className="text-5xl text-brown font-extrabold text-center">
+            Meet Your Teachers
+          </h1>
+          <h2 className="w-3/4 lg:w-2/4 mx-auto">
+            We have a range of highly-qualified teachers who all possess strong
+            English skills.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-evenly">
             <TeacherCard />
@@ -144,10 +147,13 @@ export default function Home() {
         </section>
 
         <section className="courses-info | text-center space-y-8" id="courses">
-          <h1 className="text-5xl font-extrabold">Courses</h1>
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            nesciunt natus, commodi sed quod odio cum odit voluptate.
+          <h1 className="text-5xl text-brown font-extrabold text-center">
+            Our Courses
+          </h1>
+          <h2 className="w-3/4 lg:w-2/4 mx-auto">
+            Choose from a variety of courses for various Islamic sciences. We
+            offer 30 minute and 60 minute lessons to ensure we are as flexible
+            as you need us to be.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-evenly">
             <CourseCard
@@ -177,7 +183,9 @@ export default function Home() {
 
         <section className="space-y-20" id="prices">
           <div className="prices | text-3xl text-center space-y-6 md:w-5/6 lg:w-4/6 mx-auto">
-            <h1 className="text-3xl">Choose Your Plan</h1>
+            <h1 className="text-5xl text-brown font-extrabold text-center">
+              Choose Your Plan
+            </h1>
             <h3 className="text-lg">
               A wide variety of prices to suit your needs.
             </h3>
@@ -226,16 +234,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <section className="mx-auto space-y-4" id="contact">
-            <h1 className="text-5xl font-extrabold text-center">
+        <section className="mx-auto space-y-9" id="contact">
+          <div className="space-y-7">
+            <h1 className="text-5xl text-brown font-extrabold text-center">
               Book a Lesson
             </h1>
-            <h2 className="text-center ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <h2 className="mx-auto w-3/4 md:w-full lg:w-full text-center">
+              Get in touch to book your first lesson. We are happy to help with
+              any questions you may have.
             </h2>
-            <ContactForm />
-          </section>
+          </div>
+          <ContactForm />
         </section>
       </div>
 

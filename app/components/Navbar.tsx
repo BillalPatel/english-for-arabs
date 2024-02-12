@@ -86,7 +86,7 @@ const Navbar = () => {
             className="hamburger-menu-icon | z-50 h-4 w-auto flex self-center md:hidden lg:hidden cursor-pointer absolute top-6 right-5"
             onClick={closeHamburgerMenu}
           />
-          <ul className="text-center text-white space-y-3">
+          <ul className="text-center text-blue space-y-3 hover:font-bold">
             <li>
               <a
                 href="#why-study"
