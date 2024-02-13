@@ -1,4 +1,4 @@
-import { Montserrat, Noto_Sans_Arabic } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import type { Metadata } from "next";
 import "./globals.css";
@@ -10,14 +10,10 @@ const montserrat = Montserrat({
   subsets: ["cyrillic"],
   weight: ["400", "500", "600"],
 });
-const notoSansArabic = Noto_Sans_Arabic({
-  subsets: ["arabic"],
-  weight: ["400"],
-});
 
 export const metadata: Metadata = {
-  title: "English for Arabs",
-  description: "A website to help Arabs natives learn English.",
+  title: "Aal-Imran Quran Academy",
+  description: "Islamic School.",
 };
 
 export default function RootLayout({

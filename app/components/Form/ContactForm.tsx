@@ -21,6 +21,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<FormFields>({ resolver: zodResolver(schema) });
 
@@ -28,6 +29,18 @@ export default function ContactForm() {
     try {
       await new Promise((resolve) => setTimeout(resolve, 1500));
       console.log(data);
+      emailjs
+        .send("service_yuh4t7w", "template_6js6ypl", data, "pNxkKYMTbhrNse7Hq")
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+
+      reset();
     } catch (error) {
       console.error("Something went wrong.");
     }

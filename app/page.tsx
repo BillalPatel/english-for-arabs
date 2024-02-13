@@ -14,9 +14,9 @@ import Navbar from "./components/Navbar";
 import CourseCard from "./components/CourseCard";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
-import englishIcon from "../assets/english.svg";
 import qualifiedTeacherIcon from "../assets/certificate-icon.svg";
 import laptopIcon from "../assets/laptop.svg";
+import clockIcon from "../assets/clock.svg";
 import desktopHeroImage from "../assets/hero/hero-desktop.jpg";
 import familyImage from "../assets/hero/family.svg";
 import courseImage from "../assets/courses/course.jpg";
@@ -33,7 +33,6 @@ export default function Home() {
         <Image
           src={desktopHeroImage}
           alt="Hero"
-          id="blur"
           className="h-screen w-full bg-contain z-30 object-cover"
         />
         <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-items-center items-center place-items-center place-content-center flex-col space-y-8">
@@ -66,7 +65,6 @@ export default function Home() {
               <Image
                 src={familyImage}
                 alt="Family"
-                id="blur"
                 className="h-full object-cover bg-contain flex align-middle place-self-center"
               />
             </div>
@@ -78,7 +76,6 @@ export default function Home() {
         <Image
           src={familyImage}
           alt="Family"
-          id="blur"
           className="h-full object-cover bg-contain flex align-middle place-self-center"
         />
       </div>
@@ -104,13 +101,13 @@ export default function Home() {
               imageUrl={laptopIcon}
             />
             <InfoCard
-              title="Bilingual teachers"
-              description="All teachers are proficient in English."
-              imageUrl={englishIcon}
+              title="24/7 Availability"
+              description="Consistently available, around the clock."
+              imageUrl={clockIcon}
             />
             <InfoCard
               title="Highly Qualified Tutors"
-              description="Teachers from Al-Azhar University in Cairo."
+              description="Teachers from Al-Azhar and other specialist institutes."
               imageUrl={qualifiedTeacherIcon}
             />
           </div>
