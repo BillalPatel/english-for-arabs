@@ -7,11 +7,9 @@ import Carousel from "nuka-carousel";
 import { Hero } from "./components/Hero";
 import { InfoCard } from "./components/InfoCard";
 
-import PricingCard from "./components/PricingCard";
 import ContactForm from "./components/Form/ContactForm";
 import TeacherCard from "./components/TeacherCard";
 import Navbar from "./components/Navbar";
-import CourseCard from "./components/CourseCard";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
 import qualifiedTeacherIcon from "../assets/certificate-icon.svg";

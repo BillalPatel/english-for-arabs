@@ -42,7 +42,7 @@ export const courseData = [
     image: "/courses/7.jpg",
   },
   {
-    name: "Seerah (The Prophet's Biography)",
+    name: "Seerah (Prophet's Bio)",
     description:
       "With the lessons of the Prophet’s biography, you will learn the complete Islamic truth embodied in the life of the Prophet Muhammad PBUH.",
     image: "/courses/8.jpg",
