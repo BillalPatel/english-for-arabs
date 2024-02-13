@@ -7,7 +7,7 @@ import logo from "../../assets/logo.svg";
 import openHamburgerMenuIcon from "../../assets/icons/icon-hamburger.svg";
 import closeHamburgerMenuIcon from "../../assets/icons/icon-close.svg";
 
-const Navbar = () => {
+export default function Navbar() {
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -131,6 +131,4 @@ const Navbar = () => {
       )}
     </nav>
   );
-};
-
-export default Navbar;
+}

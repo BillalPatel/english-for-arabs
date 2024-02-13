@@ -67,15 +67,18 @@ export default function Pricing() {
       </div>
 
       <div className="space-x-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-evenly">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-items-center">
           {pricingChoice.map((price: any) => (
             <PricingCard
               key={price.id}
               tier={price.level}
+              type={price.type}
               price={price.price}
               length={price.lesson_length}
               weeklyLessons={price.classes}
               monthlyLessons={price.lessons_per_month}
+              numberOfStudents={price.numberOfStudents}
+              offer={price.offer}
             />
           ))}
         </div>

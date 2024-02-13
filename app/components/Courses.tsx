@@ -9,7 +9,7 @@ export default function Courses() {
           key={course.id}
           courseTitle={course.name}
           courseDescription={course.description}
-          courseImageUrl={course.imageUrl}
+          courseImageUrl={course.image}
         />
       ))}
     </div>
