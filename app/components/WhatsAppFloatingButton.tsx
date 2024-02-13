@@ -10,7 +10,12 @@ export default function WhatsAppFloatingButton() {
       target="_blank"
     >
       <button className="h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 flex items-center justify-center">
-        <Image src={whatsAppIcon} alt="WhatsApp Icon" />
+        <Image
+          src={whatsAppIcon}
+          alt="WhatsApp Icon"
+          height={1000}
+          width={1000}
+        />
       </button>
     </Link>
   );

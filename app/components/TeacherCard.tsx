@@ -12,20 +12,34 @@ export default function TeacherCard() {
         className="w-48 h-48 lg:w-36 lg:h-36 rounded-full mx-auto"
         src={teacherImage}
         alt="Teacher"
+        height={1000}
+        width={1000}
       />
       <div className="space-y-1 mx-auto">
         <Link
           className="flex flex-row justify-center space-x-2 mx-auto hover:opacity-50 cursor-pointer"
           href={""}
         >
-          <Image src={openLinkIcon} alt="Open link" />
+          <Image
+            src={openLinkIcon}
+            alt="Open link"
+            height={1000}
+            width={1000}
+            className="h-4 w-4 flex place-self-center"
+          />
           <p>View profile</p>
         </Link>
         <Link
           className="flex flex-row justify-center space-x-2 mx-auto hover:opacity-50 cursor-pointer"
           href={""}
         >
-          <Image src={videoIcon} alt="Open video" />
+          <Image
+            src={videoIcon}
+            alt="Open video"
+            height={1000}
+            width={1000}
+            className="h-4 w-4 flex place-self-center"
+          />
           <p>See video</p>
         </Link>
       </div>

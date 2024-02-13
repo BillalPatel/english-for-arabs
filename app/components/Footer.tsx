@@ -69,9 +69,9 @@ export function Footer() {
               <g
                 id="Icon/Social/tiktok-color"
                 stroke="none"
-                stroke-width="1"
+                strokeWidth="1"
                 fill="none"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               >
                 <g id="Group-7" transform="translate(8.000000, 6.000000)">
                   <path

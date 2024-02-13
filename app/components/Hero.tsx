@@ -37,6 +37,8 @@ export function Hero() {
           <Image
             src={displayEng}
             alt="Hero"
+            height={1000}
+            width={1000}
             className="image | h-96 w-auto hidden md:flex lg:flex"
           />
         </div>
@@ -45,6 +47,8 @@ export function Hero() {
             <Image
               src={displayAr}
               alt="Hero"
+              height={1000}
+              width={1000}
               className="image | hidden md:h-96 lg:h-96 w-auto h-56 md:flex lg:flex"
             />
             <div className="space-y-3 md:space-y-10 lg:space-y-10 md:w-6/12 lg:w-6/12">

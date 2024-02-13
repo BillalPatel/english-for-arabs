@@ -1,5 +1,6 @@
 export const thirtyMinuteData = [
   {
+    id: 1,
     level: "Bronze",
     classes: 2,
     price: 36,
@@ -7,6 +8,7 @@ export const thirtyMinuteData = [
     lessons_per_month: 8,
   },
   {
+    id: 2,
     level: "Silver",
     classes: 3,
     price: 49,
@@ -14,6 +16,7 @@ export const thirtyMinuteData = [
     lessons_per_month: 12,
   },
   {
+    id: 3,
     level: "Gold",
     classes: 4,
     price: 64,
@@ -21,6 +24,7 @@ export const thirtyMinuteData = [
     lessons_per_month: 16,
   },
   {
+    id: 4,
     level: "Platinum",
     classes: 5,
     price: 78,
@@ -28,6 +32,7 @@ export const thirtyMinuteData = [
     lessons_per_month: 20,
   },
   {
+    id: 5,
     level: "Emerald",
     classes: 6,
     price: 97,
@@ -35,6 +40,7 @@ export const thirtyMinuteData = [
     lessons_per_month: 24,
   },
   {
+    id: 6,
     level: "Diamond",
     classes: 7,
     price: 120,

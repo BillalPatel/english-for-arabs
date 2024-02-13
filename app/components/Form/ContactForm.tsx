@@ -42,8 +42,8 @@ export default function ContactForm() {
 
       emailjs
         .send(
-          process.env.EMAIL_JS_SERVICE_ID!,
-          process.env.EMAIL_JS_TEMPLATE_ID ?? "",
+          process.env.EMAIL_JS_SERVICE_ID,
+          process.env.EMAIL_JS_TEMPLATE_ID,
           templateParams,
           process.env.EMAIL_JS_PUBLIC_KEY
         )
@@ -114,6 +114,7 @@ export default function ContactForm() {
             type={"text"}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder={"Enter your email address"}
+            autoComplete="on"
           />
           {errors.email && (
             <p className="text-red text-sm">{errors.email?.message}</p>
@@ -181,6 +182,7 @@ export default function ContactForm() {
             width="40"
             height="40"
             viewBox="0 0 15 15"
+
             xmlns="http://www.w3.org/2000/svg"
             className="mx-auto my-2"
           >

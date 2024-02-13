@@ -22,6 +22,8 @@ export function InfoCard(props: InfoCardProps) {
         className="w-auto h-24 mx-auto"
         src={imageUrl}
         alt="Descriptive icon"
+        height={1000}
+        width={1000}
       />
     </div>
   );

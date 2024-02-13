@@ -43,12 +43,16 @@ export default function Navbar() {
         <Image
           src={logo}
           alt={"Logo"}
+          height={1000}
+          width={1000}
           className="logo | flex p-2 md:p-0 lg:p-0 md:flex h-16 lg:h-20 w-auto"
         />
       </div>
       <Image
         src={openHamburgerMenuIcon}
         alt="Hamburger menu icon"
+        height={1000}
+        width={1000}
         className="hamburger-menu-icon | z-50 px-5 h-4 w-auto flex self-center md:hidden lg:hidden cursor-pointer"
         onClick={openHamburgerMenu}
       />
@@ -77,6 +81,8 @@ export default function Navbar() {
           <Image
             src={closeHamburgerMenuIcon}
             alt="Close hamburger menu icon"
+            height={1000}
+            width={1000}
             className="hamburger-menu-icon | z-50 h-4 w-auto flex self-center md:hidden lg:hidden cursor-pointer absolute top-6 right-5"
             onClick={closeHamburgerMenu}
           />
