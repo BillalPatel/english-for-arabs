@@ -32,7 +32,7 @@ export default function ScrollToTopButton() {
     <div>
       {isVisible && (
         <button
-          className="z-40 fixed bottom-12 right-10 bg-blue text-white font-bold rounded opacity-90 hover:opacity-100 hover:scale-110 duration-300"
+          className="z-40 fixed bottom-12 right-5 lg:right-10 bg-blue text-white font-bold rounded opacity-90 hover:opacity-100 hover:scale-110 duration-300"
           onClick={scrollToTop}
         >
           <p className="block px-4 py-2">Top</p>

@@ -26,7 +26,12 @@ export default function Pricing() {
         <button
           className={`button | rounded-xl px-5 py-2 md:px-4 lg:px-5
           ${pricingChoice === thirtyMinuteData ? "bg-blue" : "bg-darkGrey"}
-          hover:text-brown text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
+          ${
+            pricingChoice === thirtyMinuteData
+              ? "hover:text-brown"
+              : "hover:text-blue"
+          }
+          text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
           onClick={setPricingToThirtyyMinuteData}
         >
           30 mins
@@ -34,7 +39,13 @@ export default function Pricing() {
         <button
           className={`button | rounded-xl px-5 py-2 md:px-4 lg:px-5 ${
             pricingChoice === sixtyMinuteData ? "bg-blue" : "bg-darkGrey"
-          } hover:text-blue text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
+          }
+          ${
+            pricingChoice === sixtyMinuteData
+              ? "hover:text-brown"
+              : "hover:text-blue"
+          }
+          text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
           onClick={setPricingToSixtyMinuteData}
         >
           60 mins
@@ -42,7 +53,11 @@ export default function Pricing() {
         <button
           className={`button | rounded-xl px-5 py-2 md:px-4 lg:px-5 ${
             pricingChoice === groupData ? "bg-blue" : "bg-darkGrey"
-          } hover:text-blue text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
+          } 
+          ${
+            pricingChoice === groupData ? "hover:text-brown" : "hover:text-blue"
+          }
+          text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
           onClick={setPricingToGroupData}
         >
           Group

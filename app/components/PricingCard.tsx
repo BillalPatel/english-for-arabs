@@ -18,7 +18,7 @@ export default function PricingCard({
   monthlyLessons,
 }: PricingCardProps): JSX.Element {
   return (
-    <div className="pricing-card | lg:max-w-sm border-2 py-8 md:px-14 lg:px-16 w-3/4 md:w-full lg:w-full rounded-2xl space-y-4 text-center mx-auto hover:scale-105 duration-300">
+    <div className="pricing-card | lg:max-w-sm border-4 border-brown py-10 md:px-14 lg:px-16 w-3/4 md:w-full lg:w-full rounded-2xl space-y-4 text-center mx-auto hover:scale-105 duration-300">
       <h2 className="text-3xl">{tier}</h2>
       <div className="flex flex-row justify-center space-x-2">
         <h3 className="text-6xl font-bold text-brown">{price}</h3>
@@ -27,7 +27,7 @@ export default function PricingCard({
           <p>per lesson</p>
         </div>
       </div>
-      <div className="space-y-2">
+      <div className="space-y-3">
         <h4 className="text-xl font-bold">{length} minutes</h4>
         <p className="text-lg">
           <span className="bg-brown px-2 py-1 text-white">

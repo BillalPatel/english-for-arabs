@@ -11,6 +11,7 @@ type Inputs = {
   lastName: string;
   email: string;
   mobile: string;
+  courseType: string;
   message: string;
 };
 
@@ -104,6 +105,21 @@ export default function ContactForm() {
       </div>
 
       <div className="space-y-2">
+        <Input
+          {...register("courseType", {
+            required: false,
+            minLength: 3,
+          })}
+          label={"Course"}
+          id={"courseType"}
+          placeholder="Please tell us your course of choice"
+        />
+        {errors.courseType && (
+          <p className="text-red text-sm">{errors.courseType?.message}</p>
+        )}
+      </div>
+
+      <div className="space-y-2">
         <TextArea
           {...register("message", {
             required: "Please enter a message",
@@ -118,7 +134,10 @@ export default function ContactForm() {
         )}
       </div>
 
-      <Button buttonText={isSubmitting ? "Loading..." : "Submit"} width="full" />
+      <Button
+        buttonText={isSubmitting ? "Loading..." : "Submit"}
+        width="full"
+      />
     </form>
   );
 }

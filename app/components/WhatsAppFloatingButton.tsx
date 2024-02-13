@@ -6,7 +6,7 @@ export default function WhatsAppFloatingButton() {
   return (
     <Link
       href="https://wa.me/201144820185"
-      className="fixed bottom-10 left-10 z-40"
+      className="fixed bottom-10 left-5 lg:left-10 z-40"
       target="_blank"
     >
       <button className="h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20 flex items-center justify-center">
