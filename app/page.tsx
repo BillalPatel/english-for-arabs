@@ -21,6 +21,7 @@ import desktopHeroImage from "../assets/hero/hero-desktop.jpg";
 import familyImage from "../assets/hero/family.svg";
 import courseImage from "../assets/courses/course.jpg";
 import Pricing from "./components/Pricing";
+import Courses from "./components/Courses";
 
 export default function Home() {
   return (
@@ -140,28 +141,7 @@ export default function Home() {
             offer 30 minute and 60 minute lessons to ensure we are as flexible
             as you need us to be.
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-evenly">
-            <CourseCard
-              courseTitle={"Qur'an Memorization"}
-              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek"
-              courseImageUrl={courseImage}
-            />
-            <CourseCard
-              courseTitle={"Qur'an Memorization"}
-              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek"
-              courseImageUrl={undefined}
-            />
-            <CourseCard
-              courseTitle={"Qur'an Memorization"}
-              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek"
-              courseImageUrl={undefined}
-            />
-            <CourseCard
-              courseTitle={"Qur'an Memorization"}
-              courseDescription="ijojoieijop eepif epjfjepofepofk oek poefk efefpo efkpo efkop efkpoefk efk oef epkoefkpoe fefkp efkp efpek"
-              courseImageUrl={undefined}
-            />
-          </div>
+          <Courses />
         </section>
 
         {/* How it works section - https://ulumalazhar.com/course/arabic-studies/ */}

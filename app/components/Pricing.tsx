@@ -31,10 +31,11 @@ export default function Pricing() {
               ? "hover:text-brown"
               : "hover:text-blue"
           }
-          text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
+          text-offWhite md:text-lg lg:text-lg w-20 md:w-28 lg:w-32 mx-auto`}
           onClick={setPricingToThirtyyMinuteData}
         >
-          30 mins
+          <span className="md:hidden lg:hidden">30</span>
+          <span className="hidden md:block lg:block">30 mins</span>
         </button>
         <button
           className={`button | rounded-xl px-5 py-2 md:px-4 lg:px-5 ${
@@ -45,10 +46,11 @@ export default function Pricing() {
               ? "hover:text-brown"
               : "hover:text-blue"
           }
-          text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
+          text-offWhite md:text-lg lg:text-lg w-20 md:w-28 lg:w-32 mx-auto`}
           onClick={setPricingToSixtyMinuteData}
         >
-          60 mins
+          <span className="md:hidden lg:hidden">60</span>
+          <span className="hidden md:block lg:block">60 mins</span>
         </button>
         <button
           className={`button | rounded-xl px-5 py-2 md:px-4 lg:px-5 ${
@@ -57,7 +59,7 @@ export default function Pricing() {
           ${
             pricingChoice === groupData ? "hover:text-brown" : "hover:text-blue"
           }
-          text-offWhite md:text-lg lg:text-lg w-28 md:w-28 lg:w-32 mx-auto`}
+          text-offWhite md:text-lg lg:text-lg w-20 md:w-28 lg:w-32 mx-auto`}
           onClick={setPricingToGroupData}
         >
           Group
