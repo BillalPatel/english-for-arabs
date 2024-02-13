@@ -33,7 +33,6 @@ export default function ContactForm() {
 
   const onSubmit: SubmitHandler<FormFields> = async function (data) {
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
       const templateParams = {
         firstName: data.firstName,
         lastName: data.lastName,
