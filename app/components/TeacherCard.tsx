@@ -27,7 +27,7 @@ export default function TeacherCard() {
 
   return (
     // <div className="flex flex-col justify-center justify-items-center lg:max-w-sm py-5 space-y-3 border-2 rounded-lg hover:scale-105 duration-300 border-blue">
-    <div className="relative lg:max-w-sm py-5 space-y-3 border-2 rounded-lg hover:scale-105 duration-300 border-blue">
+    <div className="relative lg:max-w-sm py-10 space-y-3 border-4 rounded-lg hover:scale-105 duration-300 border-brown">
       <h2 className="text-2xl font-bold">Ahmed Mounir</h2>
       <Image
         className="w-48 h-48 lg:w-36 lg:h-36 rounded-full mx-auto"
