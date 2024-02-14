@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <Hero />
 
-      <div className="block md:hidden lg:hidden mx-auto py-20 bg-brown">
+      <div className="block md:hidden lg:hidden mx-auto py-20 bg-none">
         <Image
           src={familyImage}
           alt="Family"
