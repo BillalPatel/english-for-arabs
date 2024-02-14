@@ -39,7 +39,7 @@ export default function Navbar() {
         isScrolled ? "bg-lightGrey" : "bg-none"
       } opacity-100 z-50`}
     >
-      <div className="logo-image">
+      <Link className="logo-image" href="/">
         <Image
           src={logo}
           alt={"Logo"}
@@ -47,7 +47,7 @@ export default function Navbar() {
           width={1000}
           className="logo | flex p-2 md:p-0 lg:p-0 md:flex h-16 lg:h-20 w-auto"
         />
-      </div>
+      </Link>
       <Image
         src={openHamburgerMenuIcon}
         alt="Hamburger menu icon"
@@ -58,7 +58,7 @@ export default function Navbar() {
       />
       <ul className="menubar-links | hidden md:flex lg:flex md:flex-row lg:flex-row md:self-center lg:self-center md:space-x-6 lg:space-x-7 font-semibold text-white">
         <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
-          <Link href="#why-study">Aal-Imran</Link>
+          <Link href="#why-study">Why Us</Link>
         </li>
         <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#teachers">Our Teachers</Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 className="block text-2xl hover:cursor-pointer"
                 onClick={closeHamburgerMenu}
               >
-                Aal-Imran
+                Why Us
               </a>
             </li>
             <li>

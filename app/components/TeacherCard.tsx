@@ -43,10 +43,10 @@ export default function TeacherCard() {
           <p>See video</p>
         </Link>
       </div>
-      <ul className="lg:text-lg list-disc flex flex-col marker:text-brown overflow-auto justify-left text-left px-10 space-y-1">
-        <li>Studied at Al-Azhar Academy</li>
-        <li>Studied at Al-Azhar </li>
-        <li>Studied at Al-Azhar Academy</li>
+      <ul className="lg:text-lg list-disc flex flex-col marker:text-brown overflow-auto justify-left text-left px-16 space-y-1">
+        <li>Pref lang: Arabic then Eng</li>
+        <li>Pref age: Kids</li>
+        <li>Pref time: Flexible</li>
       </ul>
     </div>
   );

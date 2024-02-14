@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from "../../assets/hero/hero.jpg";
+import heroImage from "../../assets/hero/hero.svg";
 import familyImage from "../../assets/hero/family.svg";
 
 export default function Hero() {
