@@ -1,7 +1,6 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./Button";
+import Button from "./Button";
 
 interface CourseCardProps {
   courseTitle: string;
@@ -22,8 +21,8 @@ export default function CourseCard(props: CourseCardProps) {
         alt="Course header"
       />
       <div className="space-y-6">
-        <h1 className="text-2xl font-extrabold">{courseTitle}</h1>
-        <p className="w-10/12 text-center mx-auto h-32">
+        <h1 className="text-2xl font-extrabold text-ellipsis overflow-clip max-h-8">{courseTitle}</h1>
+        <p className="w-10/12 text-center mx-auto h-32 max-h-40 text-ellipsis overflow-clip">
           {courseDescription}
         </p>
         <Link className="pt-1 block" href={"#contact"}>

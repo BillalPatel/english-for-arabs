@@ -1,6 +1,5 @@
 import { useState } from "react";
 import PricingCard from "./PricingCard";
-
 import { thirtyMinuteData } from "../data/lesson/thirtyMinutes";
 import { sixtyMinuteData } from "../data/lesson/sixtyMinutes";
 import { groupData } from "../data/lesson/group";
@@ -53,7 +52,7 @@ export default function Pricing() {
           <span className="hidden md:block lg:block">60 mins</span>
         </button>
         <button
-          className={`button | rounded-xl px-5 py-2 md:px-4 lg:px-5 ${
+          className={`button | rounded-xl px-3 py-2 md:px-4 lg:px-5 ${
             pricingChoice === groupData ? "bg-blue" : "bg-darkGrey"
           } 
           ${

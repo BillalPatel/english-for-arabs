@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 interface InfoCardProps {
@@ -7,7 +6,7 @@ interface InfoCardProps {
   imageUrl: string;
 }
 
-export function InfoCard(props: InfoCardProps) {
+export default function InfoCard(props: InfoCardProps) {
   const { title, description, imageUrl } = props;
 
   return (

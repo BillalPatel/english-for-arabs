@@ -1,5 +1,5 @@
-import { courseData } from "../data/course/course";
 import CourseCard from "./CourseCard";
+import { courseData } from "../data/course/course";
 
 export default function Courses() {
   return (

@@ -1,71 +1,57 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-import Carousel from "nuka-carousel";
+import Link from "next/link";
+import heroImage from "../../assets/hero/hero.jpg";
+import familyImage from "../../assets/hero/family.svg";
 
-import displayAr from "../../assets/hero-left-to-right.svg";
-import displayEng from "../../assets/hero-right-to-left.svg";
-
-import { Button } from "./Button";
-export function Hero() {
+export default function Hero() {
   return (
-    <div className="hero | flex flex-col lg:p-12 md:flex-row lg:flex-row justify-between py-2 md:p-12 space-y-10 mx-auto md:mt-10 lg:mt-10 mb-24">
-      <Carousel
-        autoplay
-        autoplayInterval={2500}
-        wrapAround={true}
-        animation={"fade"}
-        // renderCenterLeftControls={null}
-        // renderCenterRightControls={null}
-        // renderBottomCenterControls={null}
-        withoutControls
-      >
-        <div className="carousel-one | w-11/12 md:w-9/12 lg:w-9/12 mx-auto flex flex-row">
-          <div className="space-y-3 md:w-6/12 lg:w-6/12 md:space-y-10 lg:space-y-10">
-            <h1 className="header | text-3xl md:text-6xl lg:text-6xl text-black">
-              Aal-Imran Quran School
-            </h1>
-            <p className="text-xl text-black md:text-2xl lg:text-2xl">
-              New videos posted regularly by English speaking teachers from
-              Egypt.
-            </p>
-            <div className="mx-auto my-10">
-              <Button buttonText="Find out more" />
+    <div className="relative">
+      <Image
+        src={heroImage}
+        height={1000}
+        width={1000}
+        alt="Hero"
+        className="h-screen w-full bg-contain z-30 object-cover"
+      />
+      <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-items-center items-center place-items-center place-content-center flex-col space-y-8">
+        <div className="flex flex-col md:flex-row lg:flex-row w-full md:w-9/12 lg:w-9/12">
+          <div className="w-full md:w-2/4 lg:w-2/4 flex align-middle flex-col place-self-center space-y-7 text-white">
+            <div className="text-6xl md:text-5xl lg:text-6xl md:text-left lg:text-left text-center w-full font-bold space-y-3">
+              <span className="bg-brown py-2 px-3 text-white">Aal-Imran</span>
+              <h1>Quran Academy</h1>
             </div>
+            <h4 className="desktop-subheader | hidden text-xl md-text-left lg:text-left text-center mx-auto md:mx-0 lg:mx-0 lg:block w-3/4 leading-8">
+              {
+                "We are a Quranic school where you can learn Qur'an, Arabic language and Islamic studies with a bunch of the best qualified instructors in all fields."
+              }
+            </h4>
+            <h4 className="mobile-subheader | text-xl md:block lg:hidden md:text-left text-center mx-auto md:mx-0 block w-3/4 max-w-md leading-8">
+              {
+                "Where you can start learning Qur'an, Islamic studies and Arabic language."
+              }
+            </h4>
+            <Link className="mx-auto md:mx-0 lg:mx-0" href={"#contact"}>
+              <button
+                className="button | my-8 inline-flex items-center justify-center px-4 md:px-6 lg:px-6 py-2 text-blue hover:text-brown font-bold text-xl hover:text-main whitespace-no-wrap transition duration-200 ease-in-out bg-white rounded-md bg-main focus:outline-none max-w-sm"
+                id="submit-button"
+              >
+                Start Free Trial
+              </button>
+            </Link>
           </div>
-          <Image
-            src={displayEng}
-            alt="Hero"
-            height={1000}
-            width={1000}
-            className="image | h-96 w-auto hidden md:flex lg:flex"
-          />
-        </div>
-        <div className="carousel-two | w-10/12 md:w-9/12 lg:w-9/12 mx-auto flex flex-col md:flex-row lg:flex-row">
-          <div className="flex flex-row mx-auto text-right md:space-y-6 lg:space-y-6 md:space-x-16 lg:space-x-16">
+          <div className="w-2/4 hidden md:block lg:block">
             <Image
-              src={displayAr}
-              alt="Hero"
+              src={familyImage}
+              alt="Family"
               height={1000}
               width={1000}
-              className="image | hidden md:h-96 lg:h-96 w-auto h-56 md:flex lg:flex"
+              className="h-full object-cover bg-contain flex align-middle place-self-center"
             />
-            <div className="space-y-3 md:space-y-10 lg:space-y-10 md:w-6/12 lg:w-6/12">
-              <h1 className="header | text-3xl lg:text-8xl md:text-8xl text-black text-right">
-                مدرسة آل عمران القرآنية
-              </h1>
-              <p className="desc | text-xl md:text-3xl lg:text-3xl text-black">
-                يتم نشر مقاطع فيديو جديدة بانتظام بواسطة مدرسين يتحدثون
-                الإنجليزية من مصر.
-              </p>
-              <div className="my-10 text-right">
-                <Button buttonText="اكتشف المزيد" />
-              </div>
-            </div>
           </div>
         </div>
-      </Carousel>
+      </div>
     </div>
   );
 }

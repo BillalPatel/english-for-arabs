@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Badge from "./Badge";
-import { Button } from "./Button";
+import Button from "./Button";
 
 interface PricingCardProps {
   type?: string;
@@ -68,7 +68,7 @@ export default function PricingCard({
           </p>
         </div>
       ) : (
-        <h4 className="text-xl font-bold bg-brown p2 py-1 text-white">
+        <h4 className="text-xl font-bold bg-brown px- py-1 text-white">
           {offer}
         </h4>
       )}

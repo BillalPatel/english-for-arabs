@@ -1,6 +1,4 @@
-import Image from "next/image";
-import React, { useState, useEffect } from "react";
-import arrowUpIcon from "../../assets/icons/arrow-up.svg";
+import { useState, useEffect } from "react";
 
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);

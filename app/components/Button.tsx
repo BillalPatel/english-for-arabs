@@ -4,7 +4,7 @@ interface ButtonProps {
   onclick?: () => void;
 }
 
-export function Button(props: ButtonProps) {
+export default function Button(props: ButtonProps) {
   const { buttonText, width = "40" } = props;
 
   return (

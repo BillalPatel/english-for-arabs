@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
-import { Button } from "../Button";
+import Button from "../Button";
 
 const schema = z.object({
   firstName: z.string().min(3, "Please enter your first name"),
