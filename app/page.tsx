@@ -63,8 +63,9 @@ export default function Home() {
             <h1 className="text-5xl text-brown font-extrabold text-center mx-auto">
               Choose Your Plan
             </h1>
-            <h2 className="text-xl md:text-2xl lg:text-2xl mx-auto">
-              A wide variety of prices to suit your needs. <br className="hidden md:block lg:block" />
+            <h2 className="text-xl md:text-2xl lg:text-2xl mx-auto w-11/12">
+              A wide variety of prices to suit your needs.{" "}
+              <br className="hidden md:block lg:block" />
               We also offer a free trial for your first lesson.
             </h2>
           </div>
