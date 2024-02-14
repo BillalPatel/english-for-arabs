@@ -52,8 +52,7 @@ export default function Home() {
               Our Courses
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-2xl w-3/4 lg:w-2/4 mx-auto">
-              Choose from a range of courses for various Islamic sciences. We
-              are as flexible as you need us to be.
+              Choose from a range of courses for various Islamic sciences.
             </h2>
           </div>
           <Courses />
@@ -65,7 +64,7 @@ export default function Home() {
               Choose Your Plan
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-2xl mx-auto">
-              A wide variety of prices to suit your needs. <br />
+              A wide variety of prices to suit your needs. <br className="hidden md:block lg:block" />
               We also offer a free trial for your first lesson.
             </h2>
           </div>

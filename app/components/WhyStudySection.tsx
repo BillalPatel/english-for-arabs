@@ -14,8 +14,9 @@ export default function WhyStudySection() {
           Why Study With Us?
         </h1>
         <h2 className="text-xl md:text-2xl lg:text-2xl">
-          Improve your Islamic knowledge through <br />our immersive learning
-          experience.
+          Improve your Islamic knowledge through{" "}
+          <br className="hidden md:block lg:block" />
+          our immersive learning experience.
         </h2>
       </div>
       <div className="info-card-section | flex justify-center flex-col md:flex-col lg:flex-row">
