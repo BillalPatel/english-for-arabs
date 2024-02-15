@@ -21,7 +21,9 @@ export default function CourseCard(props: CourseCardProps) {
         alt="Course header"
       />
       <div className="space-y-6">
-        <h1 className="text-2xl font-extrabold text-ellipsis overflow-clip max-h-8">{courseTitle}</h1>
+        <h1 className="text-2xl font-extrabold text-ellipsis overflow-clip max-h-8">
+          {courseTitle}
+        </h1>
         <p className="w-10/12 text-center mx-auto h-40 max-h-60 text-ellipsis overflow-clip">
           {courseDescription}
         </p>

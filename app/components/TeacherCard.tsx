@@ -1,13 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
-import teacherImage from "../../assets/teachers/profile/ahmed.jpeg";
 import openLinkIcon from "../../assets/icons/open-link.svg";
 import videoIcon from "../../assets/icons/video.svg";
 
-export default function TeacherCard() {
+interface TeacherCardProps {
+  teacherName: string;
+  teacherImage: string;
+  youTubeUrl: string;
+  profileUrl: string;
+  preferredLanguages: string;
+  preferredAges: string;
+  subjects: string;
+  availability: string;
+}
+
+export default function TeacherCard(props: TeacherCardProps) {
+  const {
+    teacherName,
+    teacherImage,
+    youTubeUrl,
+    profileUrl,
+    preferredLanguages,
+    preferredAges,
+    subjects,
+    availability,
+  } = props;
   return (
     <div className="lg:max-w-sm py-10 space-y-3 border-4 rounded-lg hover:scale-105 duration-300 border-brown">
-      <h2 className="text-2xl font-bold">Ahmed Mounir</h2>
+      <h2 className="text-2xl font-bold">{teacherName}</h2>
       <Image
         className="w-48 h-48 lg:w-36 lg:h-36 rounded-full mx-auto"
         src={teacherImage}
@@ -18,7 +38,8 @@ export default function TeacherCard() {
       <div className="space-y-1 mx-auto">
         <Link
           className="flex flex-row justify-center space-x-2 mx-auto hover:opacity-50 cursor-pointer"
-          href={""}
+          href={profileUrl}
+          target="_blank"
         >
           <Image
             src={openLinkIcon}
@@ -31,7 +52,8 @@ export default function TeacherCard() {
         </Link>
         <Link
           className="flex flex-row justify-center space-x-2 mx-auto hover:opacity-50 cursor-pointer"
-          href={""}
+          href={youTubeUrl}
+          target="_blank"
         >
           <Image
             src={videoIcon}
@@ -44,9 +66,22 @@ export default function TeacherCard() {
         </Link>
       </div>
       <ul className="lg:text-lg list-disc flex flex-col marker:text-brown overflow-auto justify-left text-left px-16 space-y-1">
-        <li>Pref lang: Arabic then Eng</li>
-        <li>Pref age: Kids</li>
-        <li>Pref time: Flexible</li>
+        <li>
+          <span className="font-bold">Languages: </span>
+          {preferredLanguages}
+        </li>
+        <li>
+          <span className="font-bold">Preferred ages: </span>
+          {preferredAges}
+        </li>
+        <li>
+          <span className="font-bold">Subjects: </span>
+          {subjects}
+        </li>
+        <li>
+          <span className="font-bold">Availability: </span>
+          {availability}
+        </li>
       </ul>
     </div>
   );
