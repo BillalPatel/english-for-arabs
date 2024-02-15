@@ -17,35 +17,35 @@ export const courseData = [
     id: 3,
     name: "Memorization",
     description:
-      "It will be said to the companion of the Qur'an: 'Recite and rise in status as you used to recite in the world, and your position will be at the last verse you recite. Go for it!",
+      "It will be said to the companion of the Qur'an: 'Recite and rise in status as you used to recite in the world, and your position will be at the last verse you recite.",
     image: "/courses/memorization.svg",
   },
   {
     id: 4,
     name: "Ijazah",
     description:
-      "Imagine you are reciting Quran to the Prophet Muhammad Peace be upon him. WOW! You can now a connected chain (Sanad) to the Prophet Muhammad PBUH.",
+      "Imagine you are reciting Quran to the Prophet Muhammad (PBUH). WOW! You now have a connected chain (sanad) to the Prophet Muhammad (PBUH).",
     image: "/courses/ijazah.svg",
   },
   {
     id: 5,
     name: "10 Qira'at",
     description:
-      "In the 10 Qira'at  course you will learn the most consecutive Quran recitations narrated about the Prophet Muhammad PBUH with qualified and certificated teachers.",
+      "In the this course you will learn the most consecutive Quran recitations narrated about the Prophet Muhammad (PBUH) with fully certificated teachers.",
     image: "/courses/ten-qiraat.svg",
   },
   {
     id: 6,
     name: "Islamic Basics",
     description:
-      "In Islamic Basics course you take a path of seeking knowledge through learning everything Muslim must be aware of in all walks of life.",
+      "In Islamic Basics course you take a path of seeking knowledge through learning everything a Muslim must be aware of in all walks of life.",
     image: "/courses/islamic-basics.svg",
   },
   {
     id: 7,
     name: "Tafseer",
     description:
-      "The reason why Quran was revealed is to reflect upon it. But how can we achieve that without understanding its meanings? Let's get this done together inshaa Allah.",
+      "The reason why Quran was revealed is to reflect upon it. But how can we achieve that without understanding its meanings? Let's get this done together.",
     image: "/courses/tafseer.svg",
   },
   {
@@ -60,7 +60,7 @@ export const courseData = [
     name: "Arabic Reading",
     description:
       "In Arabic reading course you will learn the rules of reading the Arabic language with which you can  read any Arabic text correctly without mistakes inshaa Allah.",
-    image: "/courses/arabic-reading.svg"
+    image: "/courses/arabic-reading.svg",
   },
   {
     id: 10,
