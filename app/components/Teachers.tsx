@@ -3,7 +3,13 @@ import { teacherData } from "../data/teacher/teacher";
 
 export default function Teachers() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5 mx-auto justify-evenly">
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-5"
+      style={{
+        gridAutoFlow: "dense",
+        gridAutoColumns: "1fr",
+      }}
+    >
       {teacherData.map((teacher: any) => (
         <TeacherCard
           key={teacher.id}

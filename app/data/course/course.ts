@@ -8,7 +8,7 @@ export const courseData = [
   },
   {
     id: 2,
-    name: "Reciting with Tajweed",
+    name: "Reciting w/ Tajweed",
     description:
       "It is a dream of each Muslim to recite the Quran as the Prophet Muhammad and his companions did. Make it come true by joining Tajweed course now.",
     image: "/courses/recite-with-tajweed.svg",
@@ -66,7 +66,7 @@ export const courseData = [
     id: 10,
     name: "Arabic Conversation",
     description:
-      "In this course you will learn and practice Arabic conversations with which you can speak almost like a native speaker inshaa Allah.",
+      "In this course you will learn and practice Arabic conversations in a fun manner with which you can speak almost like a native speaker inshaa Allah.",
     image: "/courses/conversation.svg",
   },
 ];

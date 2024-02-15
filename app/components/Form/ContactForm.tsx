@@ -44,10 +44,14 @@ export default function ContactForm() {
 
       emailjs
         .send(
-          process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID || "",
-          process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID || "",
+          "service_vqdsycq",
+          "template_6js6ypl",
           templateParams,
-          process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || ""
+          "j74mKCrZf3SfOoLEy"
+          // process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID || "",
+          // process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID || "",
+          // templateParams,
+          // process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || ""
         )
         .then((result) => {
           setIsSuccessMessageVisible(true);
@@ -65,7 +69,10 @@ export default function ContactForm() {
   return (
     <form
       className="gap-1 space-y-6 flex flex-col justify-items-center justify-self-center place-content-center md:w-4/6 lg:w-4/6 mx-auto"
-      onSubmit={handleSubmit(onSubmit)}
+      // onSubmit={handleSubmit(onSubmit)}
+      // target="_blank"
+      method="POST"
+      action="https://formsubmit.co/el/piseyo"
     >
       <div className="space-y-4">
         <div className="flex justify-center flex-col justify-items-center justify-self-center place-self-center space-y-2">
@@ -78,6 +85,7 @@ export default function ContactForm() {
           <input
             {...register("firstName")}
             type={"text"}
+            name="firstName"
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder={"Enter your first name"}
           />
