@@ -1,13 +1,14 @@
 export const teacherData = [
   {
     id: 1,
-    teacherName: "Sh. Muhammad Ramadan",
+    teacherName: "Sh. Muhammad Al-jilany",
     teacherImage: "/teachers/MuhammadRamadan.svg",
     youTubeUrl: "https://youtu.be/g-std9T6OsY",
     profileUrl:
       "https://drive.google.com/file/d/1_1AncDohGjpfj-FIdEmOkTn8xZ2GtVel/view?usp=drive_link",
     preferredLanguages: "🇬🇧 🇸🇦",
-    preferredAge: "All ages",
+    englishLevel: "Intermediate",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -19,7 +20,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1DtkFen-9kfgGuwyTDCfI2gQP_yJGMpmk/view?usp=share_link",
     preferredLanguages: "🇬🇧 🇫🇷 🇸🇦",
-    preferredAge: "All ages",
+    englishLevel: "Intermediate",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -31,8 +33,9 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1lBVtTF8K6X-TBr7HEA3t1dWKy3FTyqdG/view?usp=sharing",
     preferredLanguages: "🇬🇧 🇸🇦",
-    preferredAge: "All ages",
-    subjects: "Quran & Islamic",
+    englishLevel: "Good",
+    preferredAge: "All",
+    subjects: "Quran, Islamic",
     availability: "Flexible",
   },
   {
@@ -43,7 +46,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1BYVDSkbbF-hRR8fgZ17Fv7VdxDodgQ7b/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Good",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -55,7 +59,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1cJGR6u7aCDMoq0659BD2YCcJWrO0qnSq/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Good",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -67,7 +72,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1ha1jZ1aI566NxluOz8zhO3JvU5eITLfB/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Good",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -79,7 +85,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1eEPI9jvcnpzWUI5joWn_w1fk_uTy_zjw/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Intermediate",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -91,7 +98,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/11o73kFT2K2-Iclz-KmbUPO98F7kAlxh_/view?usp=drive_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Intermediate",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -103,7 +111,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1jxgdAM8cOwZfBvKMIAIulNM2SQXwa8YE/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Intermediate",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -115,7 +124,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1A_-zodUlUbtCdrEaMPCV8bd5SjrsEi3F/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Intermediate",
+    preferredAge: "All",
     subjects: "Quran, Arabic",
     availability: "Flexible",
   },
@@ -127,19 +137,21 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1Vt82yyddyPzG9xK5qO80Fd2niZSJNSNy/view?usp=share_link",
     preferredLanguages: "🇬🇧 🇸🇦",
-    preferredAge: "All ages",
+    englishLevel: "Basic",
+    preferredAge: "All",
     subjects: "Quran, Arabic",
     availability: "Flexible",
   },
   {
     id: 12,
-    teacherName: "Sheikh Ibrahim Mounir",
-    teacherImage: "/teachers/Ibrahim.svg",
+    teacherName: "Sheikh Ibrahim Muhammad",
+    teacherImage: "/teachers/IbrahimMuhammad.svg",
     youTubeUrl: "https://youtu.be/xwP1DFFrruI",
     profileUrl:
       "https://drive.google.com/file/d/1kbsBONW-RGmhcdDT-5TywNm_c4tXzcy_/view?usp=share_link",
     preferredLanguages: "🇬🇧 🇸🇦",
-    preferredAge: "All ages",
+    englishLevel: "Basic",
+    preferredAge: "All",
     subjects: "Quran, Arabic",
     availability: "Flexible",
   },
@@ -151,7 +163,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1BYVDSkbbF-hRR8fgZ17Fv7VdxDodgQ7b/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Basic",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -163,7 +176,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1_HT8j0wUqBHHLj58rEKt5A2iZVqtLseO/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Basic",
+    preferredAge: "All",
     subjects: "Arabic",
     availability: "Flexible",
   },
@@ -175,7 +189,8 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1wZCOf1bPyT7j5ONqiHMy7BFrgrv1mNqT/view?usp=share_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
+    englishLevel: "Intermediate",
+    preferredAge: "All",
     subjects: "All courses",
     availability: "Flexible",
   },
@@ -187,8 +202,9 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1V5tusmYYqGgRm1UORx9UDTrpAN7ilvRp/view?usp=drive_link",
     preferredLanguages: "🇸🇦 🇬🇧",
-    preferredAge: "All ages",
-    subjects: "Quran & Arabic",
+    englishLevel: "Basic",
+    preferredAge: "All",
+    subjects: "Quran, Arabic",
     availability: "Flexible",
   },
 ];

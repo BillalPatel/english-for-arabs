@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="flex items-center justify-center p-6 justify-items-center place-items-center">
         <div className="flex justify-center justify-items-center place-items-center">
           <Link
-            className="facebook | mr-6 mx-auto"
+            className="facebook | mr-6 mx-auto hover:scale-125 duration-300"
             href={"https://bit.ly/aal-imranacademy-Facebook"}
             target="_blank"
           >
@@ -23,7 +23,7 @@ export default function Footer() {
             </svg>
           </Link>
           <Link
-            className="youtube | mr-6"
+            className="youtube | mr-6 hover:scale-125 duration-300"
             href={"http://bit.ly/aal-imranacademy-youtube"}
             target="_blank"
           >
@@ -40,7 +40,7 @@ export default function Footer() {
             </svg>
           </Link>
           <Link
-            className="instagram | mr-6"
+            className="instagram | mr-6 hover:scale-125 duration-300"
             href={"https://bit.ly/aal-imranacademy-Instagram"}
             target="_blank"
           >
@@ -55,7 +55,7 @@ export default function Footer() {
             </svg>
           </Link>
           <Link
-            className="tiktok | mr-6"
+            className="tiktok | mr-6 hover:scale-125 duration-300"
             href={"https://bit.ly/aal-imranacademy-Tiktok"}
             target="_blank"
           >

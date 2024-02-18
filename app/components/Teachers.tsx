@@ -18,6 +18,7 @@ export default function Teachers() {
           youTubeUrl={teacher.youTubeUrl}
           profileUrl={teacher.profileUrl}
           preferredLanguages={teacher.preferredLanguages}
+          englishLevel={teacher.englishLevel}
           preferredAges={teacher.preferredAge}
           subjects={teacher.subjects}
           availability={teacher.availability}

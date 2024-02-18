@@ -8,7 +8,7 @@ export const courseData = [
   },
   {
     id: 2,
-    name: "Reciting w/ Tajweed",
+    name: "Reciting With Tajweed",
     description:
       "It is a dream of each Muslim to recite the Quran as the Prophet Muhammad and his companions did. Make it come true by joining Tajweed course now.",
     image: "/courses/recite-with-tajweed.svg",

@@ -24,7 +24,7 @@ export default function CourseCard(props: CourseCardProps) {
         <h1 className="text-2xl font-extrabold text-ellipsis overflow-clip max-h-8">
           {courseTitle}
         </h1>
-        <p className="w-10/12 text-center mx-auto h-32 text-ellipsis overflow-clip">
+        <p className="w-10/12 text-center mx-auto h-36 text-ellipsis overflow-clip">
           {courseDescription}
         </p>
         <Link className="pt-1 block" href={"#contact"}>

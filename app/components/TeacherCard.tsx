@@ -9,6 +9,7 @@ interface TeacherCardProps {
   youTubeUrl: string;
   profileUrl: string;
   preferredLanguages: string;
+  englishLevel: string;
   preferredAges: string;
   subjects: string;
   availability: string;
@@ -21,6 +22,7 @@ export default function TeacherCard(props: TeacherCardProps) {
     youTubeUrl,
     profileUrl,
     preferredLanguages,
+    englishLevel,
     preferredAges,
     subjects,
     availability,
@@ -69,6 +71,10 @@ export default function TeacherCard(props: TeacherCardProps) {
         <li>
           <span className="font-bold">Languages: </span>
           {preferredLanguages}
+        </li>
+        <li>
+          <span className="font-bold">Eng level: </span>
+          {englishLevel}
         </li>
         <li>
           <span className="font-bold">Preferred ages: </span>

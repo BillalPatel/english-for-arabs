@@ -5,7 +5,7 @@ import whatsAppIcon from "../../assets/whatsapp.svg";
 export default function WhatsAppFloatingButton() {
   return (
     <Link
-      href="https://wa.me/201144820185"
+      href="https://wa.me/201141592852"
       className="fixed bottom-10 left-5 lg:left-10 z-40"
       target="_blank"
     >

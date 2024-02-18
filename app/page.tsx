@@ -29,6 +29,18 @@ export default function Home() {
       <div className="sections | space-y-28 mx-6 md:mx-20 lg:mx-20 mt-16 md:mt-20 lg:mt-24">
         <WhyStudySection />
 
+        <section className="courses-info | text-center space-y-12" id="courses">
+          <div className="space-y-8">
+            <h1 className="text-5xl text-brown font-extrabold text-center">
+              Our Courses
+            </h1>
+            <h2 className="text-xl md:text-2xl lg:text-2xl w-3/4 lg:w-2/4 mx-auto">
+              Choose from a range of courses for various Islamic sciences.
+            </h2>
+          </div>
+          <Courses />
+        </section>
+
         <section
           className="teacher-info | text-center space-y-12"
           id="teachers"
@@ -44,18 +56,6 @@ export default function Home() {
           </div>
 
           <Teachers />
-        </section>
-
-        <section className="courses-info | text-center space-y-12" id="courses">
-          <div className="space-y-8">
-            <h1 className="text-5xl text-brown font-extrabold text-center">
-              Our Courses
-            </h1>
-            <h2 className="text-xl md:text-2xl lg:text-2xl w-3/4 lg:w-2/4 mx-auto">
-              Choose from a range of courses for various Islamic sciences.
-            </h2>
-          </div>
-          <Courses />
         </section>
 
         <section className="prices | text-center space-y-12" id="prices">

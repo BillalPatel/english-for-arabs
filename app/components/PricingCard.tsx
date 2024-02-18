@@ -34,7 +34,7 @@ export default function PricingCard({
           <h3 className="text-6xl font-bold text-brown">{price}</h3>
           <div className="flex flex-col text-left place-content-center">
             <p className="font-bold">USD</p>
-            <p>per lesson</p>
+            <p>per month</p>
           </div>
         </div>
       ) : (
