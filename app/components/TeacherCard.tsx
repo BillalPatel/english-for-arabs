@@ -67,9 +67,9 @@ export default function TeacherCard(props: TeacherCardProps) {
           <p>See video</p>
         </Link>
       </div>
-      <ul className="lg:text-lg list-disc flex flex-col marker:text-brown overflow-auto justify-left text-left px-16 space-y-1">
+      <ul className="lg:text-lg list-disc flex flex-col marker:text-brown overflow-auto justify-left text-left px-32 md:px-20 lg:px-12 pt-3 space-y-1 mx-auto">
         <li>
-          <span className="font-bold">Languages: </span>
+          <span className="font-bold">Lang: </span>
           {preferredLanguages}
         </li>
         <li>

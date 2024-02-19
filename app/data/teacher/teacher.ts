@@ -6,10 +6,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/g-std9T6OsY",
     profileUrl:
       "https://drive.google.com/file/d/1_1AncDohGjpfj-FIdEmOkTn8xZ2GtVel/view?usp=drive_link",
-    preferredLanguages: "🇬🇧 🇸🇦",
+    preferredLanguages: "En, Ar",
     englishLevel: "Intermediate",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -19,10 +19,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/dIyzkwoWXq8",
     profileUrl:
       "https://drive.google.com/file/d/1DtkFen-9kfgGuwyTDCfI2gQP_yJGMpmk/view?usp=share_link",
-    preferredLanguages: "🇬🇧 🇫🇷 🇸🇦",
+    preferredLanguages: "En, Fr, Ar",
     englishLevel: "Intermediate",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -32,7 +32,7 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/eumC6iqNTnc",
     profileUrl:
       "https://drive.google.com/file/d/1lBVtTF8K6X-TBr7HEA3t1dWKy3FTyqdG/view?usp=sharing",
-    preferredLanguages: "🇬🇧 🇸🇦",
+    preferredLanguages: "En, Ar",
     englishLevel: "Good",
     preferredAge: "All",
     subjects: "Quran, Islamic",
@@ -45,10 +45,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/TfHVpcgu2IQ",
     profileUrl:
       "https://drive.google.com/file/d/1BYVDSkbbF-hRR8fgZ17Fv7VdxDodgQ7b/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Good",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -58,10 +58,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/HddvvM3V3Pg",
     profileUrl:
       "https://drive.google.com/file/d/1cJGR6u7aCDMoq0659BD2YCcJWrO0qnSq/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Good",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -71,10 +71,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/kM5GqCrH9Hg",
     profileUrl:
       "https://drive.google.com/file/d/1ha1jZ1aI566NxluOz8zhO3JvU5eITLfB/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Good",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -84,10 +84,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/Ww3b2EXRIjA",
     profileUrl:
       "https://drive.google.com/file/d/1eEPI9jvcnpzWUI5joWn_w1fk_uTy_zjw/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Intermediate",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -97,10 +97,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/cXH4KjHv-No",
     profileUrl:
       "https://drive.google.com/file/d/11o73kFT2K2-Iclz-KmbUPO98F7kAlxh_/view?usp=drive_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Intermediate",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -110,10 +110,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/VrT9OXPo_Rw",
     profileUrl:
       "https://drive.google.com/file/d/1jxgdAM8cOwZfBvKMIAIulNM2SQXwa8YE/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Intermediate",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -123,7 +123,7 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/WA-5z34_6I0",
     profileUrl:
       "https://drive.google.com/file/d/1A_-zodUlUbtCdrEaMPCV8bd5SjrsEi3F/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Intermediate",
     preferredAge: "All",
     subjects: "Quran, Arabic",
@@ -136,7 +136,7 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/8KAnrKoJ8R0",
     profileUrl:
       "https://drive.google.com/file/d/1Vt82yyddyPzG9xK5qO80Fd2niZSJNSNy/view?usp=share_link",
-    preferredLanguages: "🇬🇧 🇸🇦",
+    preferredLanguages: "En, Ar",
     englishLevel: "Basic",
     preferredAge: "All",
     subjects: "Quran, Arabic",
@@ -149,7 +149,7 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/xwP1DFFrruI",
     profileUrl:
       "https://drive.google.com/file/d/1kbsBONW-RGmhcdDT-5TywNm_c4tXzcy_/view?usp=share_link",
-    preferredLanguages: "🇬🇧 🇸🇦",
+    preferredLanguages: "En, Ar",
     englishLevel: "Basic",
     preferredAge: "All",
     subjects: "Quran, Arabic",
@@ -162,10 +162,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/NC4Rderzuz0",
     profileUrl:
       "https://drive.google.com/file/d/1BYVDSkbbF-hRR8fgZ17Fv7VdxDodgQ7b/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Basic",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -175,7 +175,7 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/M3veL5oqYDE",
     profileUrl:
       "https://drive.google.com/file/d/1_HT8j0wUqBHHLj58rEKt5A2iZVqtLseO/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Basic",
     preferredAge: "All",
     subjects: "Arabic",
@@ -188,10 +188,10 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/M4g7c0QF384",
     profileUrl:
       "https://drive.google.com/file/d/1wZCOf1bPyT7j5ONqiHMy7BFrgrv1mNqT/view?usp=share_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Intermediate",
     preferredAge: "All",
-    subjects: "All courses",
+    subjects: "All",
     availability: "Flexible",
   },
   {
@@ -201,7 +201,7 @@ export const teacherData = [
     youTubeUrl: "https://youtu.be/QPWosvzpITU",
     profileUrl:
       "https://drive.google.com/file/d/1V5tusmYYqGgRm1UORx9UDTrpAN7ilvRp/view?usp=drive_link",
-    preferredLanguages: "🇸🇦 🇬🇧",
+    preferredLanguages: "Sa, En",
     englishLevel: "Basic",
     preferredAge: "All",
     subjects: "Quran, Arabic",

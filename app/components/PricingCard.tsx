@@ -72,8 +72,13 @@ export default function PricingCard({
           {offer}
         </h4>
       )}
-      <Link className="pt-4 block" href={"#contact"}>
-        <Button buttonText={"Sign Up"} />
+      <Link className="pt-5 block" href={"#contact"}>
+        <button
+          type="submit"
+          className="button | rounded-xl px-5 py-2 md:px-4 bg-blue hover:text-brown text-offWhite md:text-lg lg:text-lg mx-auto"
+        >
+          Book Free Trial
+        </button>
       </Link>
     </div>
   );

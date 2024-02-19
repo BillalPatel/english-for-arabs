@@ -27,8 +27,13 @@ export default function CourseCard(props: CourseCardProps) {
         <p className="w-10/12 text-center mx-auto h-36 text-ellipsis overflow-clip">
           {courseDescription}
         </p>
-        <Link className="pt-1 block" href={"#contact"}>
-          <Button buttonText={"Sign Up"} />
+        <Link className="block" href={"#contact"}>
+          <button
+            type="submit"
+            className="button | rounded-xl px-5 py-2 md:px-4 bg-blue hover:text-brown text-offWhite md:text-lg lg:text-lg mx-auto"
+          >
+            Book Free Trial
+          </button>
         </Link>
       </div>
     </div>
