@@ -61,10 +61,10 @@ export default function Navbar() {
           <Link href="#why-study">Why Us</Link>
         </li>
         <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
-          <Link href="#teachers">Our Teachers</Link>
+          <Link href="#courses">Courses</Link>
         </li>
         <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
-          <Link href="#courses">Courses</Link>
+          <Link href="#teachers">Our Teachers</Link>
         </li>
         <li className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-brown after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center place-self-center">
           <Link href="#prices">Prices</Link>
@@ -98,20 +98,20 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#teachers"
-                className="block text-2xl hover:cursor-pointer"
-                onClick={closeHamburgerMenu}
-              >
-                Our Teachers
-              </a>
-            </li>
-            <li>
-              <a
                 href="#courses"
                 className="block text-2xl hover:cursor-pointer"
                 onClick={closeHamburgerMenu}
               >
                 Courses
+              </a>
+            </li>
+            <li>
+              <a
+                href="#teachers"
+                className="block text-2xl hover:cursor-pointer"
+                onClick={closeHamburgerMenu}
+              >
+                Our Teachers
               </a>
             </li>
             <li>
