@@ -7,7 +7,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1_1AncDohGjpfj-FIdEmOkTn8xZ2GtVel/view?usp=drive_link",
     preferredLanguages: "En, Ar",
-    englishLevel: "Intermediate",
+    englishLevel: "Good",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
@@ -20,7 +20,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1DtkFen-9kfgGuwyTDCfI2gQP_yJGMpmk/view?usp=share_link",
     preferredLanguages: "En, Fr, Ar",
-    englishLevel: "Intermediate",
+    englishLevel: "Good",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
@@ -33,7 +33,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1lBVtTF8K6X-TBr7HEA3t1dWKy3FTyqdG/view?usp=sharing",
     preferredLanguages: "En, Ar",
-    englishLevel: "Good",
+    englishLevel: "Great",
     preferredAge: "All",
     subjects: "Quran, Islamic",
     availability: "Flexible",
@@ -46,7 +46,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1BYVDSkbbF-hRR8fgZ17Fv7VdxDodgQ7b/view?usp=share_link",
     preferredLanguages: "Ar, En",
-    englishLevel: "Good",
+    englishLevel: "Great",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
@@ -59,7 +59,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1cJGR6u7aCDMoq0659BD2YCcJWrO0qnSq/view?usp=share_link",
     preferredLanguages: "Ar, En",
-    englishLevel: "Good",
+    englishLevel: "Great",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
@@ -72,7 +72,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1ha1jZ1aI566NxluOz8zhO3JvU5eITLfB/view?usp=share_link",
     preferredLanguages: "Ar, En",
-    englishLevel: "Good",
+    englishLevel: "Great",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
@@ -85,7 +85,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1eEPI9jvcnpzWUI5joWn_w1fk_uTy_zjw/view?usp=share_link",
     preferredLanguages: "Ar, En",
-    englishLevel: "Intermediate",
+    englishLevel: "Good",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
@@ -98,7 +98,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/11o73kFT2K2-Iclz-KmbUPO98F7kAlxh_/view?usp=drive_link",
     preferredLanguages: "Ar, En",
-    englishLevel: "Intermediate",
+    englishLevel: "Good",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
@@ -111,7 +111,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1jxgdAM8cOwZfBvKMIAIulNM2SQXwa8YE/view?usp=share_link",
     preferredLanguages: "Ar, En",
-    englishLevel: "Intermediate",
+    englishLevel: "Good",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
@@ -124,7 +124,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1A_-zodUlUbtCdrEaMPCV8bd5SjrsEi3F/view?usp=share_link",
     preferredLanguages: "Ar, En",
-    englishLevel: "Intermediate",
+    englishLevel: "Good",
     preferredAge: "All",
     subjects: "Quran, Arabic",
     availability: "Flexible",
@@ -189,7 +189,7 @@ export const teacherData = [
     profileUrl:
       "https://drive.google.com/file/d/1wZCOf1bPyT7j5ONqiHMy7BFrgrv1mNqT/view?usp=share_link",
     preferredLanguages: "Ar, En",
-    englishLevel: "Intermediate",
+    englishLevel: "Good",
     preferredAge: "All",
     subjects: "All",
     availability: "Flexible",
